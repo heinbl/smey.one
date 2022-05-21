@@ -30,7 +30,7 @@ export default function Intro(props: IntroProps): ReactElement {
         <div className={ homeStyles.intro }>
           <div className={ homeStyles.infoBox }>
             <h1 className={ homeStyles.headline }>
-              Hi, i'm Simon,
+              Hi, i&apos;m Simon,
             </h1>
             <h2 className={ homeStyles.subHeadline }>
               a Full-Stack-Developer from Germany.
@@ -44,10 +44,10 @@ export default function Intro(props: IntroProps): ReactElement {
           <div className={ homeStyles.descBox }>
             <div className={ homeStyles.introParagraph }>
               <p>
-                I'm an aspiring Full-Stack-Developer based in Oldenburg, Lower Saxony and excel in <b ref={ underlineRef }>JS/Node.js</b>, <b>PHP</b>, <b>HTML</b>, <b>CSS</b>, Linux. I also like working with modern libraries like <b>React</b>, <b>Next.js</b> or <b>Express</b>. Fun Fact: I know how to quit (and use) VIM.
+                I&apos;m an aspiring Full-Stack-Developer based in Oldenburg, Lower Saxony and excel in <b ref={ underlineRef }>JS/Node.js</b>, <b>PHP</b>, <b>HTML</b>, <b>CSS</b>, Linux. I also like working with modern libraries like <b>React</b>, <b>Next.js</b> or <b>Express</b>. Fun Fact: I know how to quit (and use) VIM.
               </p>
               <p>
-                I'm a quick learner and like learning something new (currently this is&nbsp;
+                I&apos;m a quick learner and like learning something new (currently this is&nbsp;
                 <Link href="/woodturning">
                   <a>woodturning</a>
                 </Link>
