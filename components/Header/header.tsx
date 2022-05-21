@@ -16,6 +16,7 @@ export default function Header(props: HeaderProps): ReactElement {
             src={ HeaderImage } 
             alt="a small programmer in the wild"
             layout="responsive"
+            sizes="100px"
           />
         </div>
         <nav className={ styles.nav }>
