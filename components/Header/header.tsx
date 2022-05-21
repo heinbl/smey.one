@@ -20,7 +20,7 @@ export default function Header(props: HeaderProps): ReactElement {
         </div>
         <nav className={ styles.nav }>
           <Link href="/"><a className={ styles.navItem }>About</a></Link>
-          <Link href="CV"><a className={ styles.navItem }>CV</a></Link>
+          <Link href="CV"><a className={ styles.navItem } target="_blank" rel="noopener noreferrer" href="/files/cv.pdf">CV(GER)</a></Link>
           <a className={ styles.navItem } target="_blank" rel="noopener noreferrer" href="mailto:simon.meyer@mailbox.org">Contact</a>
         </nav>
       </div>
