@@ -44,17 +44,17 @@ export default function Intro(props: IntroProps): ReactElement {
           <div className={ homeStyles.descBox }>
             <div className={ homeStyles.introParagraph }>
               <p>
-                I&apos;m an aspiring Full-Stack-Developer based in Oldenburg, Lower Saxony and excel in <b ref={ underlineRef }>JS/Node.js</b>, <b>PHP</b>, <b>HTML</b>, <b>CSS</b>, Linux. I also like working with modern libraries like <b>React</b>, <b>Next.js</b> or <b>Express</b>. Fun Fact: I know how to quit (and use) VIM.
+                I&apos;m an aspiring Full-Stack-Developer based in Oldenburg, Lower Saxony and excel in <b ref={ underlineRef }>JS/Node.js</b>, <b>PHP</b>, <b>HTML</b>, <b>CSS</b> and Linux. I also like working with modern libraries like <b>React</b>, <b>Next.js</b> or <b>Express</b>. I know how to quit (and use) VIM.
               </p>
               <p>
                 I&apos;m a quick learner and like learning something new (currently this is&nbsp;
-                <Link href="/woodturning">
+                <Link href="/">
                   <a>woodturning</a>
                 </Link>
                 ). 
               </p>
               <p>
-                One of my biggest loves - besides the obvious - is <b>basketball</b>. 
+                One of my biggest loves is <b>basketball</b>. 
               </p>
             </div>
           </div>

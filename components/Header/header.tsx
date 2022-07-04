@@ -2,7 +2,7 @@ import type { ReactElement } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Header.module.css';
-import HeaderImage from '../../public/images/header.jpg';
+import HeaderImage from '../../public/images/header2.jpg';
 
 export interface HeaderProps {};
 
