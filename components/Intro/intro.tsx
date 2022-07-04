@@ -10,12 +10,12 @@ export interface IntroProps {};
 export default function Intro(props: IntroProps): ReactElement {
   const underlineRef = useRef<HTMLElement | null>(null);
 
-  useEffect(() => {
-    const annoTag:HTMLElement | null = underlineRef.current;
-    if(annoTag) {
-      const annotation = annotate(annoTag, { type: 'underline', color: 'rgb(135, 127, 73)' });
-      annotation.show();
-    } }, []);
+  // useEffect(() => {
+  //   const annoTag:HTMLElement | null = underlineRef.current;
+  //   if(annoTag) {
+  //     const annotation = annotate(annoTag, { type: 'underline', color: 'rgb(135, 127, 73)' });
+  //     annotation.show();
+  //   } }, []);
 
   return (
       <div className={ homeStyles.container }>
