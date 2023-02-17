@@ -41,7 +41,7 @@ export default function Intro(props: IntroProps): ReactElement {
             ein Full-Stack-Entwickler aus dem Norden Deutschlands.
           </h2>
           <a className={introStyles.mailMeButton} target="_blank" rel="noopener noreferrer" href="mailto:simon.meyer@mailbox.org">
-            Schick 'ne Mail
+            Schick &apos; ne Mail
           </a>
         </div>
       </div>
