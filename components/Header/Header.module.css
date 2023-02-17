@@ -1,23 +1,24 @@
 .header {
-    height: 100px;
+    height: 100%;
     width: 100%;
 }
 
 .nav {
-    margin-left: auto;
-    margin-right: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 .nav > a {
     text-decoration: none;
     color: var(--font);
-    opacity: 0.5;
+    opacity: 1;
     transition: opacity ease-in .15s;  
-    margin: 0.2rem;
+    margin: 0.75rem;
     text-transform: lowercase;
 }
 
 .nav > a:hover {
-    opacity: 1;
+    opacity: 0.5;
 }
 
 .headerImage {
@@ -26,9 +27,6 @@
 
 .headerInner {
     width: 100%;
-    margin-top: 1rem;
-    display: flex;
-    align-items: center;
 }
 
 .imageContainer {
