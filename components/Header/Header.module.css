@@ -7,6 +7,7 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
 }
 .nav > a {
     text-decoration: none;
@@ -22,7 +23,10 @@
 }
 
 .headerImage {
-    border-radius: 100%;
+    stroke: var(--accent);
+    color: var(--accent);
+    height: auto;
+    max-width: 80%;
 }
 
 .headerInner {
@@ -30,11 +34,9 @@
 }
 
 .imageContainer {
-    margin: 0 1rem;
-    border-radius: 100%;
+    margin: 1rem;
     height: 60px;
     width: 60px;
-    box-shadow: var(--shadow) 7px 7px 29px;
 }
 
 @media screen and (max-width: 576px) {

@@ -4,6 +4,7 @@ import introStyles from './Intro.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import BackgroundImage from '../../public/images/bg_small.jpg';
+import Logo from '../../public/images/simon_logo.svg';
 import { annotate } from 'rough-notation';
 
 
