@@ -50,7 +50,7 @@ export default function Intro(props: IntroProps): ReactElement {
           <div className={introStyles.introParagraph}>
             <p>
               {/* I&apos;m an aspiring Full-Stack-Developer based in Oldenburg, Lower Saxony and excel in <b ref={ underlineRef }>JS/Node.js</b>, <b>PHP</b>, <b>HTML</b>, <b>CSS</b> and Linux. I also like working with modern libraries like <b>React</b>, <b>Next.js</b> or <b>Express</b>. I know how to quit (and use) VIM. */}
-              Ich entwickle Projekte unter anderem mit <b>Javascript/Node.js, PHP, HTML, CSS</b>. Dabei arbeite ich gerne mit modernen Frameworks wie React, Next.js oder Svelte.
+              { /* Ich entwickle Projekte unter anderem mit <b>Javascript/Node.js, PHP, HTML, CSS</b>. Dabei arbeite ich gerne mit modernen Frameworks wie React, Next.js oder Svelte. */}
             </p>
             <p>
               Leidenschaftlich gerne lerne ich neue Dinge kennen. Aktuell versuche ich mich am {' '}
