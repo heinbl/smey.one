@@ -2,7 +2,6 @@ import type { ReactElement } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Header.module.css';
-import HeaderImage from '../../public/images/header2.jpg';
 import Logo from '../../public/images/simon_logo.svg';
 
 export interface HeaderProps {};
