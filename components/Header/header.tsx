@@ -11,7 +11,6 @@ export default function Header(props: HeaderProps): ReactElement {
   return (
     <header className={ styles.header }>
       <div className={ styles.headerInner }>
-        <nav className={ styles.nav }>
         <div className={ styles.imageContainer }>
           <Image 
             className={ styles.headerImage }
@@ -19,6 +18,7 @@ export default function Header(props: HeaderProps): ReactElement {
             alt="a small programmer in the wild"
           />
         </div>
+        <nav className={ styles.nav }>
           <Link href="/" className={ styles.navItem }>About</Link>
           {/* <Link href="/coffee"><a className={ styles.navItem }>Coffee</a></Link> */}
           <Link className={ styles.navItem } target="_blank" rel="noopener noreferrer" href="/files/cv.pdf">CV(GER)</Link>
