@@ -1,7 +1,9 @@
 :root {
     --background: #fff;
-    --font: rgb(44, 46, 49);
-    --font-light: rgb(109, 119, 119);
+    /* --font: rgb(44, 46, 49); */
+    --font: rgba(0, 0, 0, 1);
+    --font-light: rgba(0, 0, 0, .7);
+    /* --font-light: rgb(109, 119, 119); */
     --accent: rgb(68, 71, 149);
     --link: rgb(71, 79, 132);
     --link-visited: rgb(73, 81, 135);
@@ -27,10 +29,10 @@ body {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: underline;
     color: var(--link);
 }
 
-a:visited {
-    color: var(--link-visited);
-}
+/* a:visited { */
+/*     color: var(--link-visited); */
+/* } */

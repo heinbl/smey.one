@@ -1,11 +1,12 @@
 import Head from 'next/head';
-import { Raleway } from '@next/font/google';
+import { Montserrat } from '@next/font/google';
 type LayoutProps = {
   children: React.ReactNode;
 }
 
-const raleway = Raleway({
+const font = Montserrat({
   subsets: ['latin'],
+  // weight: '400',
 });
 
 export default function Layout({ children }: LayoutProps) {
@@ -17,7 +18,7 @@ export default function Layout({ children }: LayoutProps) {
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
         <link rel="manifest" href="/favicon/site.webmanifest" />
       </Head>
-      <main className={ raleway.className }>{ children }</main>
+      <main className={ font.className }>{ children }</main>
     </>
   );
 }

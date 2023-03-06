@@ -28,10 +28,6 @@
     z-index: 2;
 }
 
-.imageContainer {
-    display: flex;
-}
-
 .pictureContainer {
     position: relative;
     margin: 0 auto;
@@ -53,19 +49,54 @@
 /*     border-radius: 20px; */
 /* } */
 
-.bgImage {
-    margin: 0 auto;
-    height: auto;
+.imageContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
     min-width: 20%;
     max-width: 30%;
+    margin: 0 auto;
+    border-radius: 1rem;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* .imageContainer::before { */
+/*     content: ""; */
+/*     position: absolute; */
+/*     background-color: var(--accent); */
+/*     border-radius: 1rem; */
+/*     top: 0; */
+/*     left: 0; */
+/*     height: 100%; */
+/*     width: 100%; */
+/*     transform: translate(10px, 10px); */
+/*     z-index: -1; */
+/* } */
+
+/* .imageContainer::after { */
+/*     content: ""; */
+/*     position: absolute; */
+/*     background-color: var(--accent); */
+/*     border-radius: 1rem; */
+/*     top: 0; */
+/*     left: 0; */
+/*     height: 100%; */
+/*     width: 100%; */
+/*     transform: translate(10px, -10px); */
+/*     z-index: -1; */
+/* } */
+
+.bgImage {
+    width: 100%;
+    height: auto;
     border-radius: 1rem;
 }
 
-
 .headline {
     margin-top: 1rem;
-    margin-bottom: 0;
+    margin-bottom: 2rem;
 }
+
 
 .subHeadline {
     color: var(--font-light);
@@ -90,6 +121,11 @@
     max-width: 100%;
 }
 
+.hero {
+    animation: fadeInUp .5s ease;
+    margin: 1rem 0 2rem 0;
+}
+
 .introParagraph {
     margin-top: 0;
     margin-bottom: 0;
@@ -102,6 +138,7 @@
 
 .mailMeButton {
     margin: 0 auto;   
+    text-decoration: none;
     display: inline-block;
     background-color: var(--accent);
     border: 2px solid var(--accent);
@@ -127,7 +164,7 @@
 
 @media screen and (min-width: 600px) {
 
-    .bgImage {
+    .imageContainer {
         width: 75%;
         height: auto;
     }
@@ -157,7 +194,7 @@
         padding: 0;
         max-width: 50%;
     }
-    .bgImage {
+    .imageContainer {
         margin-right: 1rem;
         min-width: 0;
         width: 30%;
@@ -165,7 +202,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .bgImage {
+    .imageContainer {
         width: 20%;
     }
 }
@@ -201,3 +238,15 @@
 /*         width: 100%; */
 /*     } */
 /* } */
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);        
+        opacity: 1;
+    }
+}

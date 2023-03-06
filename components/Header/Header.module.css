@@ -8,6 +8,7 @@
     width: 100%;
     justify-content: flex-end;
     align-items: center;
+    margin-right: 1rem;
 }
 .nav > a {
     position: relative;
@@ -15,7 +16,6 @@
     color: var(--font);
     opacity: 1;
     transition: color ease-in .15s;  
-    margin: 0.2rem;
     padding: 0.3rem 0.6rem;
     text-transform: lowercase;
 }
@@ -45,8 +45,14 @@
     stroke: var(--accent);
     color: var(--accent);
     height: auto;
-    min-width: 25px;
-    max-width: 30%;
+    min-width: 50px;
+    width: 3vw;
+    margin-left: 0.5rem;
+    transition: all .15s;
+}
+
+.headerImage:hover {
+    cursor: pointer;
 }
 
 .headerInner {
@@ -55,7 +61,7 @@
 }
 
 .imageContainer {
-    margin: 1rem;
+    margin: 0.5rem;
 }
 
 @media screen and (min-width: 600px) {
