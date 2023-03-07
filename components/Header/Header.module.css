@@ -17,7 +17,8 @@
     opacity: 1;
     transition: color ease-in .15s;  
     padding: 0.3rem 0.6rem;
-    text-transform: lowercase;
+    font-variant: small-caps;
+    font-weight: 300;
 }
 
 .nav > a::after {
@@ -34,7 +35,8 @@
 
 
 .nav > a:hover {
-    color: #fff;
+    color: var(--font-light) ;
+    z-index: 1;
 }
 
 .nav > a:hover::after {

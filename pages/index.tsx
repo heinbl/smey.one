@@ -1,7 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Header from '../components/Header/header';
-import Intro from '../components/Intro/intro';
+import Intro from '@components/Intro/intro';
 
 const Index: NextPage = () => {
 
@@ -29,7 +28,6 @@ const Index: NextPage = () => {
         <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png"></meta>
         <meta name="theme-color" content="#ffffff"></meta>
       </Head>
-      <Header />
       <Intro />
     </>
   )

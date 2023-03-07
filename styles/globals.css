@@ -1,12 +1,17 @@
 :root {
-    --background: #fff;
+    /* --background: #fff; */
+    --background: rgba(255, 255, 255, 1);
     /* --font: rgb(44, 46, 49); */
     --font: rgba(0, 0, 0, 1);
-    --font-light: rgba(0, 0, 0, .7);
+    --font-grey: rgb(109, 119, 119);
+    --font-light: rgba(255, 255, 255, .9);
     /* --font-light: rgb(109, 119, 119); */
-    --accent: rgb(68, 71, 149);
-    --link: rgb(71, 79, 132);
-    --link-visited: rgb(73, 81, 135);
+    /* --accent: rgb(68, 71, 149); */
+    /* --accent: rgb(60, 82, 51); */
+    --accent: rgb(38, 64, 39);
+    --link: rgb(38, 64, 39);
+    --link-visited: rgb(60, 82, 51);
+    /* --link-visited: rgb(73, 81, 135); */
     --shadow: rgba(100, 100, 111, 0.3);
 }
 
@@ -21,7 +26,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   color: var(--font);
-
+  background-color: var(--background);
 }
 
 * {
