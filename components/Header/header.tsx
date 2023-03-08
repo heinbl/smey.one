@@ -11,11 +11,12 @@ export default function Header(props: HeaderProps): ReactElement {
     <header className={ styles.header }>
       <div className={ styles.headerInner }>
         <div className={ styles.imageContainer }>
-          <Link href="/">
+          <Link href="/" style={{ color: 'var(--font-light)' }}>
             <Image
               className={styles.headerImage}
               src={Logo}
               alt="logo showing a black S"
+              style={{ color: 'inherit' }}
             />
           </Link>
         </div>
