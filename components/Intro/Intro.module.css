@@ -20,7 +20,7 @@
     display: flex;
     align-items: center;
     min-width: 20%;
-    max-width: 30%;
+    max-width: 50%;
     margin: 0 auto;
     border-radius: 1rem;
     box-shadow: 0px 1px 4px var(--shadow);
@@ -29,7 +29,7 @@
 .bgImage {
     width: 100%;
     height: auto;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
 }
 
 .headline {
@@ -40,13 +40,14 @@
 .subHeadline {
     color: var(--font-grey);
     font-weight: 350;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 .infoBox {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .hero {
@@ -81,6 +82,7 @@
 @media screen and (min-width: 600px) {
 
     .imageContainer {
+        min-width: 35%;
         width: 75%;
         height: auto;
     }
@@ -88,14 +90,13 @@
     .topContainer {
         display: flex;        
         flex-direction: row-reverse;
-        gap: 1rem;
+        gap: 1.5rem;
         padding: 1rem;
         align-items: center;
     }
     
     .container {
-        width: 80%;
-        margin: 2rem auto 0 auto;
+        margin: 1rem auto;
     }
     
     .infoBox {

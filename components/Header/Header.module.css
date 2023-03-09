@@ -1,6 +1,12 @@
 .header {
-    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 10%;
     width: 100%;
+    background-color: var(--background);
+    z-index: 1;
 }
 
 .nav {

@@ -1,5 +1,4 @@
 import type { ReactElement } from 'react';
-import { useRef } from 'react';
 import introStyles from './Intro.module.css';
 import appStyles from '@styles/App.module.css';
 import Link from 'next/link';
@@ -13,9 +12,16 @@ export default function Intro(props: IntroProps): ReactElement {
   return (
     <div className={appStyles.container}>
       <div className={introStyles.topContainer}>
+    { /*
         <div className={introStyles.imageContainer}>
-          <Image className={introStyles.bgImage} src={BackgroundImage} alt="a programmer in the wild" />
+          <Image 
+            className={introStyles.bgImage} 
+            src={BackgroundImage} 
+            alt="a programmer in the wild" 
+            sizes="(max-width: 600px) 80vw,
+                  50vw"/>
         </div>
+  */ }
         <div className={introStyles.infoBox}>
           <div className={introStyles.hero}>
             <h1 className={introStyles.headline}>
