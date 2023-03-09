@@ -4,7 +4,11 @@ import appStyles from '@styles/App.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import BackgroundImage from '@images/bg_small.jpg';
+import { Cormorant } from '@next/font/google';
 
+const cormorant = Cormorant({
+  subsets: ['latin']
+})
 
 export interface IntroProps {};
 
@@ -21,18 +25,19 @@ export default function Intro(props: IntroProps): ReactElement {
             sizes="(max-width: 600px) 80vw,
                   50vw"/>
         </div>
-  */ }
+  */}
         <div className={introStyles.infoBox}>
           <div className={introStyles.hero}>
-            <h1 className={introStyles.headline}>
-              Moin. Ich bin Simon,
+            <h1 className={[introStyles.headline ,cormorant.className].join(" ")}>
+              Moin. <br />
+              Ich bin Simon,
             </h1>
             <h2 className={introStyles.subHeadline}>
               ein Full-Stack-Entwickler aus dem schönen Oldenburg. <br />
 
             </h2>
             <h2 className={introStyles.subHeadline}>
-              Außerdem mag ich Basketball, {' '}
+              Außerdem liebe ich Basketball, {' '}
               drehe krumme Dinger aus
               {' '}
               <Link href="/drehen">

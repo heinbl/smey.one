@@ -16,7 +16,6 @@
 }
 
 .imageContainer {
-    position: relative;
     display: flex;
     align-items: center;
     min-width: 20%;
@@ -33,6 +32,7 @@
 }
 
 .headline {
+    font-size: 5em;
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
@@ -109,7 +109,7 @@
 @media screen and (min-width: 900px) {
     .infoBox {
         padding: 0;
-        max-width: 50%;
+        max-width: 80ch;
     }
     .imageContainer {
         margin-right: 1rem;

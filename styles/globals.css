@@ -1,22 +1,26 @@
 :root {
     /* --background: #fff; */
-    --background: rgba(255, 255, 255, 1);
+    /* --background: rgba(255, 255, 255, 1); */
+    --background: rgba(38, 64, 39, 1);
     /* --font: rgb(44, 46, 49); */
-    --font: rgba(0, 0, 0, 1);
-    --font-grey: rgb(109, 119, 119);
-    --font-light: rgba(255, 255, 255, .9);
+    --font: rgba(255, 255, 255, .9);
+    --font-grey: rgba(255, 255, 255, .8);
+    /* --font-light: rgba(255, 255, 255, .9); */
     /* --font-light: rgb(109, 119, 119); */
     /* --accent: rgb(68, 71, 149); */
     /* --accent: rgb(60, 82, 51); */
-    --accent: rgb(38, 64, 39);
-    --link: rgb(38, 64, 39);
-    --link-visited: rgb(60, 82, 51);
-    /* --link-visited: rgb(73, 81, 135); */
+    /* --accent: rgb(216, 216, 246); */
+    --accent: rgb(220, 255, 253);
+    /* --accent: rgb(242, 193, 78); */
+    /* --link: rgb(38, 64, 39); */
+    --link: rgba(216, 216, 246, 1);
+    /* --link-visited: rgb(60, 82, 51); */
+    --link-visited: #9b9be8;
     --shadow: rgba(100, 100, 111, 0.3);
 }
 
 html {
-    font-size: calc(1em + 0.5vw);
+    font-size: calc(1em + 0.4vw);
 }
 
 html,
@@ -35,9 +39,9 @@ body {
 
 a {
     text-decoration: underline;
-    color: var(--link);
+    color: var(--font);
 }
 
-/* a:visited { */
-/*     color: var(--link-visited); */
-/* } */
+a:visited {
+    color: var(--link);
+}

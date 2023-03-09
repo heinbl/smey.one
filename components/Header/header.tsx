@@ -1,25 +1,33 @@
 import type { ReactElement } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import styles from './Header.module.css';
-import Logo from '@images/small_logo.svg';
+// import Logo from '@images/small_logo.svg';
+import Logo from '@images/small.svg';
+import { Cormorant } from '@next/font/google';
+
+const headerFont = Cormorant({
+  subsets: ['latin'],
+})
 
 export interface HeaderProps {};
 
 export default function Header(props: HeaderProps): ReactElement {
-  return (
-    <header className={ styles.header }>
-      <div className={ styles.headerInner }>
-        <div className={ styles.imageContainer }>
-          <Link href="/" style={{ color: 'var(--font-light)' }}>
-            <Image
-              className={styles.headerImage}
-              src={Logo}
-              alt="logo showing a black S"
-              style={{ color: 'inherit' }}
-            />
-          </Link>
-        </div>
+return (
+  <header className={ styles.header && headerFont.className}>
+    <div className={ styles.headerInner }>
+      <div className={ styles.imageContainer }>
+        <Link href="/">
+  { /*
+          <Image
+            className={styles.headerImage}
+            src={Logo}
+            alt="logo showing a black S"
+            style={{ fill: '#fff' }}
+          />
+*/}
+          <Logo className={styles.headerImage}/>
+        </Link>
+      </div>
         <nav className={ styles.nav }>
           { /* <Link href="/" className={ styles.navItem }>About</Link> */}
           {/* <Link href="/coffee"><a className={ styles.navItem }>Coffee</a></Link> */}
