@@ -1,8 +1,28 @@
 .container {
-    padding: 1rem;
+    padding: 0 1rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+.centered {
+    margin: 0 auto;
+}
+
+.containerWithFade {
+    animation: fadeInUp .5s ease;
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);        
+        opacity: 1;
+    }
 }
 
 @media screen and (min-width: 600px) {

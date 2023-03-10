@@ -40,7 +40,7 @@ export default function Intro(props: IntroProps): ReactElement {
               Außerdem liebe ich Basketball, {' '}
               drehe krumme Dinger aus
               {' '}
-              <Link href="/drehen">
+              <Link href="/drechseln">
                 Holz
               </Link>
               {' '}

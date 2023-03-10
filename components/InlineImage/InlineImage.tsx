@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './InlineImage.module.css';
 
 interface InlineImageProps {
-    children: JSX.Element[],
+    children: JSX.Element,
 }
 
 export const InlineImage: React.FC<InlineImageProps> = ({ children }): JSX.Element => {

@@ -32,13 +32,14 @@
 }
 
 .headline {
-    font-size: 5em;
+    color: var(--accent);
     margin-top: 1rem;
+    font-size: 5em;
     margin-bottom: 2rem;
 }
 
 .subHeadline {
-    color: var(--font-grey);
+    color: var(--font);
     font-weight: 350;
     font-size: 1.2em;
 }
@@ -52,7 +53,7 @@
 
 .hero {
     animation: fadeInUp .5s ease;
-    margin: 1rem 0 2rem 0;
+    margin: 0 0 2rem 0;
 }
 
 .introParagraph {

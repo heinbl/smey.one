@@ -13,9 +13,9 @@
     --accent: rgb(220, 255, 253);
     /* --accent: rgb(242, 193, 78); */
     /* --link: rgb(38, 64, 39); */
-    --link: rgba(216, 216, 246, 1);
+    --link: rgb(220, 255, 253);
     /* --link-visited: rgb(60, 82, 51); */
-    --link-visited: #9b9be8;
+    --link-visited: rgb(71, 128, 125);
     --shadow: rgba(100, 100, 111, 0.3);
 }
 
@@ -39,9 +39,9 @@ body {
 
 a {
     text-decoration: underline;
-    color: var(--font);
+    color: var(--accent);
 }
 
 a:visited {
-    color: var(--link);
+    color: var(--link-visited);
 }
