@@ -18,9 +18,9 @@ export default function Drechseln(props: DrechselnProps): ReactElement {
                             <InlineImage key={i}>
                                 <Image
                                     src={`/images/drechseln/${ (x+1)%2 === 0 ? '2' : '1'}.webp`}
+                                    height={ 500 }
+                                    width={ 500 }
                                     alt="image showing woodwork"
-                                    width={'100'}
-                                    height={'100'}
                                 />
                             </InlineImage>
                         );
