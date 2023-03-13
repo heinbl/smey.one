@@ -4,11 +4,12 @@ import { useRouter } from 'next/router';
 import styles from './Header.module.css';
 // import Logo from '@images/small_logo.svg';
 import Logo from '@images/small.svg';
-import { Cormorant } from 'next/font/google';
+// import { Cormorant } from 'next/font/google';
 
-const headerFont = Cormorant({
-  subsets: ['latin'],
-})
+//TODO: fix font, when google fonts are fixed @vercel
+// const headerFont = Cormorant({
+//   subsets: ['latin'],
+// })
 
 export interface HeaderProps {};
 
@@ -16,7 +17,7 @@ export default function Header(props: HeaderProps): ReactElement {
   const { pathname } = useRouter();
   const path = pathname.replace(/\/+/i, '');
 return (
-  <header className={ [styles.header, headerFont.className].join(" ")}>
+  <header className={ [styles.header].join(" ")}>
     <div className={ styles.headerInner }>
       <div className={ styles.imageContainer }>
         <Link href="/">

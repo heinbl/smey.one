@@ -32,6 +32,7 @@
 }
 
 .headline {
+    font-family: 'Cormorant', serif;
     color: var(--font);
     margin-top: 1rem;
     font-size: 5em;

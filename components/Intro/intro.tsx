@@ -4,11 +4,11 @@ import appStyles from '@styles/App.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import BackgroundImage from '@images/bg_small.jpg';
-import { Cormorant } from 'next/font/google';
+// import { Cormorant } from 'next/font/google';
 
-const cormorant = Cormorant({
-  subsets: ['latin']
-})
+// const cormorant = Cormorant({
+//   subsets: ['latin']
+// })
 
 export interface IntroProps {};
 
@@ -16,19 +16,9 @@ export default function Intro(props: IntroProps): ReactElement {
   return (
     <div className={appStyles.container}>
       <div className={introStyles.topContainer}>
-    { /*
-        <div className={introStyles.imageContainer}>
-          <Image 
-            className={introStyles.bgImage} 
-            src={BackgroundImage} 
-            alt="a programmer in the wild" 
-            sizes="(max-width: 600px) 80vw,
-                  50vw"/>
-        </div>
-  */}
         <div className={introStyles.infoBox}>
           <div className={introStyles.hero}>
-            <h1 className={[introStyles.headline ,cormorant.className].join(" ")}>
+            <h1 className={[introStyles.headline].join(" ")}>
               Moin. <br />
               Ich bin Simon,
             </h1>
