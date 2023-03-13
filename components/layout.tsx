@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Header from '@components/Header/header';
-import { Montserrat } from '@next/font/google';
+import { Montserrat } from 'next/font/google';
 type LayoutProps = {
   children: React.ReactNode;
 }

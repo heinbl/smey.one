@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import styles from './Header.module.css';
 // import Logo from '@images/small_logo.svg';
 import Logo from '@images/small.svg';
-import { Cormorant } from '@next/font/google';
+import { Cormorant } from 'next/font/google';
 
 const headerFont = Cormorant({
   subsets: ['latin'],

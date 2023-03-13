@@ -4,7 +4,7 @@ import appStyles from '@styles/App.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import BackgroundImage from '@images/bg_small.jpg';
-import { Cormorant } from '@next/font/google';
+import { Cormorant } from 'next/font/google';
 
 const cormorant = Cormorant({
   subsets: ['latin']
