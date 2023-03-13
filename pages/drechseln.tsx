@@ -11,13 +11,13 @@ export default function Drechseln(props: DrechselnProps): ReactElement {
     return (
         <div className={ [appStyles.container, appStyles.containerWithFade].join(" ")}>
             <p>Ab und an drehe ich etwas an der Drechselbank.</p>
-            <div >
+            <div className={ appStyles.imageContainer }>
                 {
-                    [...Array(5)].map(i => {
+                    [...Array(20)].map((i, x) => {
                         return (
                             <InlineImage key={i}>
                                 <Image
-                                    src={'/images/drechseln/1.jpg'}
+                                    src={`/images/drechseln/${ (x+1)%2 === 0 ? '2' : '1'}.webp`}
                                     alt="image showing woodwork"
                                     width={'100'}
                                     height={'100'}

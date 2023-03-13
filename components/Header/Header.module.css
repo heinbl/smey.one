@@ -1,16 +1,72 @@
 .header {
     position: fixed;
-    left: 0;
     top: 0;
-    right: 0;
     height: 10%;
     width: 100%;
     background-color: var(--background);
     z-index: 1;
 }
 
-.nav {
+.hamburger {
+    display: block;
+    width: 40px;
+    height: 30px;
+    position: relative;
+    margin: 0 20px;
+    transform: rotateY(180deg);
+}
+
+.hamburger:hover {
+    cursor: pointer;
+    color: var(--accent);
+}
+
+.hamburger::after, 
+.hamburger::before {
+    content: '';
+    color: var(--font);
+    border-radius: 2em;
+    background-color: currentColor;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    transition: all .45s ease-in-out;
+}
+
+.hamburger::after{
+    width: 80%;
+}
+
+.hamburger::before {
+    top: 0;
+}
+
+.hamburger::after {
+    bottom: 0;
+    box-shadow: 0 -14px var(--accent);
+}
+
+.hamburger.hamburgerOne:hover::before {
+    top: 14px;
+    transform: rotate(135deg);
+}
+
+.hamburger.hamburgerOne:hover::after {
+    width: 100%;
+    box-shadow: 0 0 transparent;
+    bottom: 14px;
+    transform:rotate(-135deg);
+}
+
+.mobileNav {
+    width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.nav {
+    display: none;
     width: 100%;
     justify-content: flex-end;
     align-items: center;
@@ -19,12 +75,32 @@
 .nav > a {
     position: relative;
     text-decoration: none;
-    color: var(--accent);
+    color: var(--font);
     opacity: 1;
     transition: color ease-in .15s;  
     padding: 0.3rem 0.6rem;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+.navSelected { 
+    z-index: 1;
+    color: var(--accent) !important;
+}
+
+.navSelected::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left:0;
+    right: 0;
+    height: 2%;
+    width: 100% !important;
+    margin: auto;
+    background-color: var(--accent);
+    transition: all ease-in .15s;
+    z-index: -1;
 }
 
 .nav > a::after {
@@ -34,7 +110,7 @@
     top: 0;
     left:0;
     right: 0;
-    height: 100%;
+    height: 2%;
     width: 0;
     margin: auto;
     background-color: var(--accent);
@@ -45,7 +121,7 @@
 
 .nav > a:hover {
     z-index: 1;
-    color: var(--background)
+    color: var(--accent)
 }
 
 .nav > a:hover::after {
@@ -83,9 +159,20 @@
 @media screen and (min-width: 600px) {
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
 
+    .mobileNav {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+    }
+
+    .header {
+        position: relative;
+    }
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1200px) {
 }

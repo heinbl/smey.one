@@ -1,4 +1,5 @@
 .container {
+    margin-top: 4rem;
     padding: 0 1rem;
     display: flex;
     justify-content: center;
@@ -11,6 +12,13 @@
 
 .containerWithFade {
     animation: fadeInUp .5s ease;
+}
+
+.imageContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    align-items: center;
+    gap: 1rem; 
 }
 
 @keyframes fadeInUp {
@@ -33,6 +41,9 @@
 }
 
 @media screen and (min-width: 900px) {
+    .container {
+        margin-top: 1rem;
+    }
 }
 
 @media screen and (min-width: 1200px) {
