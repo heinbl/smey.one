@@ -1,8 +1,7 @@
-import type { ReactElement } from 'react';
+import { useState, ReactElement } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import styles from './Header.module.css';
-// import Logo from '@images/small_logo.svg';
 import Logo from '@images/small.svg';
 // import { Cormorant } from 'next/font/google';
 
@@ -14,14 +13,15 @@ import Logo from '@images/small.svg';
 export interface HeaderProps {};
 
 export default function Header(props: HeaderProps): ReactElement {
+  const [showHamburger, setShowHamburger] = useState<boolean>(false);
   const { pathname } = useRouter();
   const path = pathname.replace(/\/+/i, '');
 return (
-  <header className={ [styles.header].join(" ")}>
-    <div className={ styles.headerInner }>
-      <div className={ styles.imageContainer }>
+  <header className={[styles.header].join(" ")}>
+    <div className={styles.headerInner}>
+      <div className={styles.imageContainer}>
         <Link href="/">
-  { /*
+          { /*
           <Image
             className={styles.headerImage}
             src={Logo}
@@ -29,20 +29,72 @@ return (
             style={{ fill: '#fff' }}
           />
 */}
-          <Logo className={styles.headerImage}/>
+          <Logo
+            className={[styles.headerImage, showHamburger ? styles.hamburgerHeader : ''].join(" ")}
+            onClick={ () => setShowHamburger(false) }
+          />
         </Link>
       </div>
-        <nav className={styles.mobileNav}>
-          <i className={ [styles.hamburger, styles.hamburgerOne].join(" ") }></i>
-        </nav>
-        <nav className={ styles.nav }>
-          { /* <Link href="/" className={ styles.navItem }>About</Link> */}
-          {/* <Link href="/coffee"><a className={ styles.navItem }>Coffee</a></Link> */}
-          <Link className={ [path === 'drechseln' ? styles.navSelected : '', styles.navItem].join(" ") } href="/drechseln">Drechseln</Link>
-        <Link className={ styles.navItem } target="_blank" rel="noopener noreferrer" href="/files/cv.pdf">Cv</Link>
-          <Link className={ styles.navItem } target="_blank" rel="noopener noreferrer" href="mailto:simon.meyer@mailbox.org">Kontakt</Link>
-        </nav>
-      </div>
-    </header>
+      <nav className={styles.mobileNav}>
+        <input type="checkbox"
+          style={{ display: 'none' }}
+          onClick={() => setShowHamburger(!showHamburger)}
+          className={ showHamburger ? styles.hamburgerActive : '' }
+          id="hamburger-active" />
+        <label className={[styles.hamburgerBox].join(" ")} htmlFor="hamburger-active">
+          <div className={ styles.hamburgerMenu}>
+            <div className={styles.hamburgerLinks}>
+              <Link
+                className={[path === 'drechseln' ? styles.hamburgerItemSelected : '', styles.hamburgerItem].join(" ")}
+                href="/drechseln"
+                onClick={() => setShowHamburger(false)}
+                >
+                Drechseln
+              </Link>
+              <Link
+                className={styles.hamburgerItem}
+                target="_blank"
+                rel="noopener noreferrer"
+                href="/files/cv.pdf"
+                onClick={() => setShowHamburger(!false)}
+                >
+                Cv
+              </Link>
+              <Link
+                className={styles.hamburgerItem}
+                target="_blank"
+                rel="noopener noreferrer"
+                href="mailto:simon.meyer@mailbox.org"
+                onClick={() => setShowHamburger(!false)}
+                >
+                Kontakt
+              </Link>
+            </div>
+          </div>
+          <i className={[styles.hamburger, styles.hamburgerOne].join(" ")}></i>
+        </label>
+      </nav>
+      <nav className={styles.nav}>
+              <Link className={path === 'drechseln' ? styles.navItemSelected : ''}
+                href="/drechseln">
+                Drechseln
+              </Link>
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                href="/files/cv.pdf">
+                Cv
+              </Link>
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                href="mailto:simon.meyer@mailbox.org">
+                Kontakt
+              </Link>
+        { /* <Link href="/" className={ styles.navItem }>About</Link> */}
+        {/* <Link href="/coffee"><a className={ styles.navItem }>Coffee</a></Link> */}
+      </nav>
+    </div>
+  </header>
   );
 }

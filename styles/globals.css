@@ -3,7 +3,7 @@
     /* --background: rgba(255, 255, 255, 1); */
     --background: rgba(38, 64, 39, 1);
     /* --font: rgb(44, 46, 49); */
-    --font: rgba(255, 255, 255, .9);
+    --font: rgba(255, 255, 255, 1);
     --font-grey: rgba(255, 255, 255, .8);
     /* --font-light: rgba(255, 255, 255, .9); */
     /* --font-light: rgb(109, 119, 119); */
@@ -36,6 +36,10 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+p {
+  line-height: 1.4;
 }
 
 a {

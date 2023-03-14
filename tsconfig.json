@@ -30,6 +30,9 @@
         ],
         "@images/*": [
           "public/images/*"
+        ],
+        "@lib/*": [
+          "lib/*"
         ]
     },
     "plugins": [

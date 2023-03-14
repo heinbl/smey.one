@@ -48,7 +48,12 @@
     .container {
         margin-top: 1rem;
     }
+
 }
 
 @media screen and (min-width: 1200px) {
+
+    .imageContainer {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+    }
 }
