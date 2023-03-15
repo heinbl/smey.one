@@ -21,7 +21,7 @@ const Drechseln: NextPage = () => {
                 <i> Drechselbank ;)</i>.
             </p>
             <p>
-                <i>Hier ein paar Impressionen.</i>
+                <i>Hier ein paar Eindrücke.</i>
             </p>
             <div className={ appStyles.imageContainer }>
                 {
