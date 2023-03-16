@@ -21,6 +21,42 @@
     gap: 1rem; 
 }
 
+.actionButton {
+    position: relative;
+    background-color: transparent;
+    color: var(--font);
+    border: 1px solid var(--font);
+    border-radius: 4px;
+    font-size: 0.7em;
+    font-weight: 200;
+    padding: 0.7rem 3rem;
+    transition: all .15s ease-in;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.actionButton::after {
+    content: '';
+    position: absolute;
+    background-color: var(--font);
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    transition: all .15s ease-in;
+    z-index: -1;
+}
+
+.actionButton:hover::after {
+    width: 100%;
+}
+
+.actionButton:hover {
+    cursor: pointer;
+    color: var(--background);
+}
+
 @keyframes fadeInUp {
     0% {
         transform: translateY(20px);

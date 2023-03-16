@@ -38,8 +38,15 @@ body {
   box-sizing: border-box;
 }
 
+h1 {
+  font-family: 'Cormorant', serif;
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
 p {
   line-height: 1.4;
+  margin: 0.5rem 0;
 }
 
 a {

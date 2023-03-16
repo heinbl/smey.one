@@ -34,8 +34,11 @@
 .headline {
     font-family: 'Cormorant', serif;
     color: var(--font);
-    margin-top: 1rem;
+    margin-top: 0;
     font-size: 5em;
+}
+
+.headline:last-of-type {
     margin-bottom: 2rem;
 }
 
