@@ -38,13 +38,21 @@
     font-size: 5em;
 }
 
+.rotate90:hover {
+    transform: rotate(90deg);
+}
+
+.headline:first-of-type {
+    margin-top: 1rem;
+}
+
 .headline:last-of-type {
     margin-bottom: 2rem;
 }
 
 .subHeadline {
     color: var(--font);
-    font-weight: 350;
+    font-weight: 300;
     font-size: 1.2em;
 }
 

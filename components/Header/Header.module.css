@@ -126,6 +126,7 @@
     width: auto;
     color: var(--background);
     text-decoration: none;
+    text-transform: uppercase;
     position: relative;
 }
 

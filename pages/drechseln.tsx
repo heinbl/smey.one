@@ -13,7 +13,7 @@ interface PageProps {
 
 const Drechseln: NextPage<PageProps> = ({ imagePaths }) => {
     return (
-        <div className={ [appStyles.container, appStyles.containerWithFade].join(" ")}>
+        <div className={ [appStyles.container, appStyles.withFade].join(" ")}>
             <Head>
                 <title>Drechseln</title>   
             </Head>

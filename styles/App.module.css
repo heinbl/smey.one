@@ -10,8 +10,15 @@
     margin: 0 auto;
 }
 
-.containerWithFade {
+.withFade {
     animation: fadeInUp .5s ease;
+}
+
+.inlineContainer {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .imageContainer {
@@ -22,17 +29,33 @@
 }
 
 .actionButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
     position: relative;
     background-color: transparent;
     color: var(--font);
     border: 1px solid var(--font);
     border-radius: 4px;
     font-size: 0.7em;
-    font-weight: 200;
-    padding: 0.7rem 3rem;
+    font-family: inherit;
+    padding: 0.7rem 2rem;
     transition: all .15s ease-in;
     text-transform: uppercase;
     z-index: 1;
+}
+
+@keyframes bounceAnimation {
+    0% {
+        margin-top: -10px;
+    }
+    50% {
+        margin-top: 0;
+    }
+    100% {
+        margin-top: 10px;
+    }
 }
 
 .actionButton::after {
@@ -57,6 +80,12 @@
     color: var(--background);
 }
 
+.linkNoStyles {
+    font-variant: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
 @keyframes fadeInUp {
     0% {
         transform: translateY(20px);
@@ -73,6 +102,10 @@
     .container {
         width: 80%;
         margin: 4rem auto 0 auto;
+    }
+    
+    .inlineContainer {
+        flex-direction: row;
     }
 
     .imageContainer {
