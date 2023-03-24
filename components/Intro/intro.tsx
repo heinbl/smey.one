@@ -2,6 +2,7 @@ import type { ReactElement } from 'react';
 import introStyles from './Intro.module.css';
 import appStyles from '@styles/App.module.css';
 import Link from 'next/link';
+import { Portfolio } from '@components/Portfolio';
 import { ArrowRight, ArrowDown } from '@phosphor-icons/react';
 // import { Cormorant } from 'next/font/google';
 
@@ -14,8 +15,8 @@ export interface IntroProps {};
 export default function Intro(props: IntroProps): ReactElement {
   return (
     <div className={appStyles.container}>
-      <div id="intro" className={appStyles.pageHeight}>
-        <div className={introStyles.topContainer}>
+      <div id="intro" className={appStyles.pageHeight} style={{ scrollMarginTop: '75px' }}>
+        <div id="top-container" className={introStyles.topContainer}>
           <section className={introStyles.infoBox}>
             <div className={introStyles.hero}>
               <h1 className={[introStyles.headline].join(" ")}>
@@ -41,43 +42,52 @@ export default function Intro(props: IntroProps): ReactElement {
               <Link href="/fahrrad" >Rennrad</Link>.
                    */}
               </h2>
-              <div className={ [appStyles.inlineContainer, appStyles.flexV].join(" ") } >
-                <button className={ appStyles.actionButton }>
-                  <a 
+              <div className={ [appStyles.inlineContainer].join(" ") } >
+                  <a
+                    className={ [appStyles.actionButton, appStyles.pageLink].join(" ") }
                     target="_blank" 
                     rel="noopener noreferrer" 
                     href="mailto:simon.meyer@mailbox.org">
+                    { /* <span className={ appStyles.secondaryText }>simon.meyer@mailbox.org</span> */ }
                     Schreib &apos;ne Mail
-                  </a>
                     <ArrowRight size="1rem" />
-                </button>
+                  </a>
                   <a
-                    className={ appStyles.actionButton }
+                    className={ [appStyles.actionButton, appStyles.pageLink].join(" ")}
                     href="#portfolio"
                   >
                     Portfolio
                     <ArrowDown size="1rem" />
                   </a>
                 { /* 
-              <button
-                type="button"
-                className={appStyles.actionButton}
-              >
-              </button>
+                <h1 >
+                  <a
+                    className={appStyles.pageLink}
+                    href="#portfolio"
+                  >
+                    Portfolio
+                    <ArrowDown size="1rem" />
+                  </a>
+                </h1>
+                <h1>
+                  <a
+                    className={ appStyles.pageLink }
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    href="mailto:simon.meyer@mailbox.org">
+                    Schreib &apos;ne Mail
+                    <ArrowRight size="1rem" />
+                  </a>
+                </h1>
+                  */ }
+                { /* 
                    */ }
               </div>
             </div>
-            { /* 
-          <a className={introStyles.mailMeButton} target="_blank" rel="noopener noreferrer" href="mailto:simon.meyer@mailbox.org">
-            Schreib &apos;ne Mail
-          </a>
-               */}
           </section>
         </div>
       </div>
-      <div id="portfolio" className={ [appStyles.pageHeight].join(" ") }>
-        stuff
-      </div>
+      <Portfolio />
     </div>
   );
 }

@@ -20,7 +20,9 @@ return (
   <header className={[styles.header].join(" ")}>
     <div className={styles.headerInner}>
       <div className={styles.imageContainer}>
-        <Link href="/">
+        <Link 
+          scroll={false}
+          href="/#intro">
           { /*
           <Image
             className={styles.headerImage}
@@ -44,6 +46,18 @@ return (
         <label className={[styles.hamburgerBox].join(" ")} htmlFor="hamburger-active">
           <div className={ styles.hamburgerMenu}>
             <div className={styles.hamburgerLinks}>
+              <Link 
+                scroll={false}
+                onClick={() => setShowHamburger(false)}
+                href="/#intro">
+                Home
+              </Link>
+              <Link 
+                onClick={() => setShowHamburger(false)}
+                scroll={false}
+                href="/#portfolio">
+                Portfolio
+              </Link>
               <Link
                 className={[path === 'drechseln' ? styles.hamburgerItemSelected : '', styles.hamburgerItem].join(" ")}
                 href="/drechseln"
@@ -75,6 +89,11 @@ return (
         </label>
       </nav>
       <nav className={styles.nav}>
+              <Link 
+                scroll={false}
+                href="/#portfolio">
+                Portfolio
+              </Link>
               <Link className={path === 'drechseln' ? styles.navItemSelected : ''}
                 href="/drechseln">
                 Drechseln

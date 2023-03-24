@@ -6,8 +6,16 @@
     flex-direction: column;
 }
 
+.flexV {
+    flex-direction: column !important;
+}
+
+.topHeaderPadding {
+    margin-top: 2rem;
+}
+
 .pageHeight {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .light {
@@ -24,10 +32,10 @@
 }
 
 .inlineContainer {
-    padding: 2rem 0;
+    padding: 1rem 0;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .imageContainer {
@@ -77,19 +85,32 @@
     color: var(--background);
 }
 
-.actionButton ~ a {
+.pageLink, .pageLink:visited, .pageLink:link {
+    color: var(--font);
+    text-transform: uppercase;
     text-decoration: none;
-    color: inherit;
+    transition: all .25s ease-in-out;
 }
 
-.actionButton > a:link {
-    text-decoration: none;
-    color: inherit;
+.pageLink:hover {
+    color: var(--background) !important;
+    background-color: var(--font);
 }
 
-.actionButton > a:visited {
-    text-decoration: none;
-    color: inherit;
+a > .secondaryText {
+    display: none;
+}
+
+a:hover > .secondaryText {
+    display: inline-block;
+}
+
+a:hover > .primaryText {
+    display: none;
+}
+
+.scrollMargin {
+    scroll-margin-top: 50px;
 }
 
 .linkNoStyles {
@@ -111,14 +132,14 @@
 }
 
 @media screen and (min-width: 600px) {
+    .scrollMargin {
+        scroll-margin-top: 50px;
+    }
     .container {
         width: 80%;
         margin: 4rem auto 0 auto;
     }
     
-    .inlineContainer {
-        flex-direction: row;
-    }
 
     .imageContainer {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -126,10 +147,21 @@
 }
 
 @media screen and (min-width: 900px) {
+    .scrollMargin {
+        scroll-margin-top: 0;
+    }
     .container {
         margin-top: 1rem;
     }
 
+    .inlineContainer {
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    .topHeaderPadding {
+        margin-top: 0;
+    }
 }
 
 @media screen and (min-width: 1200px) {

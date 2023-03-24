@@ -1,10 +1,11 @@
 .header {
+    scroll-behavior: smooth;
     position: fixed;
     top: 0;
-    height: 10%;
+    height: 75px;
     width: 100%;
     background-color: var(--background);
-    z-index: 1;
+    z-index: 4;
 }
 
 .hamburgerActive ~ .hamburgerBox .hamburgerOne::before {
@@ -190,7 +191,7 @@
 
 .navItemSelected { 
     z-index: 1;
-    color: var(--accent) !important;
+    color: var(--background) !important;
 }
 
 .navItemSelected::after {
@@ -200,10 +201,10 @@
     top: 0;
     left:0;
     right: 0;
-    height: 2%;
+    height: 100%;
     width: 100% !important;
     margin: auto;
-    background-color: var(--accent);
+    background-color: var(--font);
     transition: all ease-in .15s;
     z-index: -1;
 }
@@ -215,10 +216,10 @@
     top: 0;
     left:0;
     right: 0;
-    height: 2%;
+    height: 100%;
     width: 0;
     margin: auto;
-    background-color: var(--accent);
+    background-color: var(--font);
     transition: all ease-in .15s;
     z-index: -1;
 }
@@ -226,7 +227,7 @@
 
 .nav > a:hover {
     z-index: 1;
-    color: var(--accent)
+    color: var(--background)
 }
 
 .nav > a:hover::after {
@@ -240,8 +241,8 @@
     height: auto;
     min-width: 50px;
     width: 3vw;
-    margin-left: 0.5rem;
-    transition: all .15s;
+    margin-left: 0rem;
+    transition: all .5s;
     z-index: 2;
 }
 
