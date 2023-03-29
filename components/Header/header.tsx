@@ -14,8 +14,9 @@ export interface HeaderProps {};
 
 export default function Header(props: HeaderProps): ReactElement {
   const [showHamburger, setShowHamburger] = useState<boolean>(false);
-  const { pathname } = useRouter();
+  const { pathname, asPath } = useRouter();
   const path = pathname.replace(/\/+/i, '');
+  const subpath = asPath.replace(/\/\#+/i, '');
 return (
   <header className={[styles.header].join(" ")}>
     <div className={styles.headerInner}>
@@ -48,11 +49,13 @@ return (
             <div className={styles.hamburgerLinks}>
               <Link 
                 scroll={false}
+                className={[(subpath === 'intro' || (subpath === '/' && !path)) ? styles.hamburgerItemSelected : '', styles.hamburgerItem].join(" ")}
                 onClick={() => setShowHamburger(false)}
                 href="/#intro">
                 Home
               </Link>
               <Link 
+                className={[subpath === 'portfolio' ? styles.hamburgerItemSelected : '', styles.hamburgerItem].join(" ")}
                 onClick={() => setShowHamburger(false)}
                 scroll={false}
                 href="/#portfolio">
