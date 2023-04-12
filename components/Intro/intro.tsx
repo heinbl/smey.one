@@ -1,10 +1,7 @@
 import type { ReactElement } from 'react';
-import introStyles from './Intro.module.css';
 import appStyles from '@styles/App.module.css';
-import Link from 'next/link';
 import { Portfolio } from '@components/Portfolio';
 import { Info } from '@components/Info';
-import { ArrowRight, ArrowDown } from '@phosphor-icons/react';
 // import { Cormorant } from 'next/font/google';
 
 // const cormorant = Cormorant({
