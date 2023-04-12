@@ -49,7 +49,7 @@ return (
             <div className={styles.hamburgerLinks}>
               <Link 
                 scroll={false}
-                className={[(subpath === 'intro' || (subpath === '/' && !path)) ? styles.hamburgerItemSelected : '', styles.hamburgerItem].join(" ")}
+                className={[(subpath === 'intro' || (subpath === '/' && !path)) ? styles.hamburgerItemSelected : false, styles.hamburgerItem].join(" ")}
                 onClick={() => setShowHamburger(false)}
                 href="/#intro">
                 Home

@@ -157,7 +157,6 @@ a:hover > .primaryText {
 
     .inlineContainer {
         flex-direction: row;
-        gap: 3rem;
     }
 
     .topHeaderPadding {
