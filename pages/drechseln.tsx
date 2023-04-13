@@ -21,12 +21,8 @@ const Drechseln: NextPage<PageProps> = ({ imagePaths }) => {
                 Ich und mein Holz.
             </h1>
             <p>
-                Ich arbeite gerne mit Holz, sei es Feuerholz zu sägen, oder etwas herzustellen, 
-                weil der Rohstoff unglaublich vielseitig ist.
-            </p>
-            <p>
-                Das Drechseln begeistert mich, weil es unzählige Möglichkeiten gibt, etwas mit
-                einfachen Mitteln zu schaffen.
+                Ich arbeite gerne mit Holz, sei es um Feuerholz zu sägen, oder etwas herzustellen, 
+                weil der Rohstoff unglaublich vielseitig ist. Die Möglichkeiten sind unendlich.
             </p>
             <p>
                 So wird aus einem Stück <strong>Feuerholz </strong>beispielsweise eine

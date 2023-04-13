@@ -13,15 +13,15 @@ const Info: React.FC<InfoProps> = (): JSX.Element => {
       <div id="top-container" className={styles.topContainer}>
         <section className={styles.infoBox}>
           <div className={styles.hero}>
-            <h1 className={[styles.headline].join(" ")}>
+            <h1 className={styles.headline}>
               Moin.<br />
               Ich bin Simon,
             </h1>
-            <h2 className={styles.subHeadline}>
+            <p className={styles.subHeadline}>
               ein Full-Stack-Entwickler aus dem schönen Oldenburg.
-            </h2>
+            </p>
 
-            <h2 className={styles.subHeadline}>
+            <p className={styles.subHeadline}>
               Außerdem liebe ich Basketball, {' '}
               arbeite gerne mit
               {' '}
@@ -35,7 +35,7 @@ const Info: React.FC<InfoProps> = (): JSX.Element => {
               { /* 
               <Link href="/fahrrad" >Rennrad</Link>.
                  */}
-            </h2>
+            </p>
             <div className={ [appStyles.inlineContainer, styles.buttonContainer ].join(" ") } >
               <a
                 className={ [appStyles.actionButton, appStyles.pageLink].join(" ") }

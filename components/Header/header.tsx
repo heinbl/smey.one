@@ -24,14 +24,6 @@ return (
         <Link 
           scroll={false}
           href="/#intro">
-          { /*
-          <Image
-            className={styles.headerImage}
-            src={Logo}
-            alt="logo showing a black S"
-            style={{ fill: '#fff' }}
-          />
-*/}
           <Logo
             className={[styles.headerImage, showHamburger ? styles.hamburgerHeader : ''].join(" ")}
             onClick={ () => setShowHamburger(false) }
@@ -49,7 +41,7 @@ return (
             <div className={styles.hamburgerLinks}>
               <Link 
                 scroll={false}
-                className={[(subpath === 'intro' || (subpath === '/' && !path)) ? styles.hamburgerItemSelected : false, styles.hamburgerItem].join(" ")}
+                className={[(subpath === 'intro' || (subpath === '/' && !path)) ? styles.hamburgerItemSelected : '', styles.hamburgerItem].join(" ")}
                 onClick={() => setShowHamburger(false)}
                 href="/#intro">
                 Home

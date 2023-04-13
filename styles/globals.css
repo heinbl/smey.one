@@ -2,16 +2,19 @@
     /* --background: #fff; */
     /* --background: rgba(255, 255, 255, 1); */
     --background: rgba(38, 64, 39, 1);
+    /* --background: rgba(255, 255, 255, 1); */
     /* --font: rgb(44, 46, 49); */
     --font: rgba(255, 255, 255, 1);
+    /* --font: rgba(0, 0, 0, 1); */
     --font-grey: rgba(255, 255, 255, .8);
     /* --font-light: rgba(255, 255, 255, .9); */
     /* --font-light: rgb(109, 119, 119); */
     /* --accent: rgb(68, 71, 149); */
     /* --accent: rgb(60, 82, 51); */
     /* --accent: rgb(216, 216, 246); */
-    --accent: rgb(220, 255, 253);
     /* --accent: rgb(242, 193, 78); */
+    --accent: rgb(220, 255, 253);
+    /* --accent: rgb(0, 0, 0); */
     /* --link: rgb(38, 64, 39); */
     --link: rgb(220, 255, 253);
     /* --link-visited: rgb(60, 82, 51); */
@@ -49,10 +52,11 @@ h1 {
 h2 {
   padding: 0;
   margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 
 p {
-  line-height: 1.4;
+  line-height: 1.5;
   margin: 0.5rem 0;
 }
 
@@ -110,6 +114,10 @@ a:link:visited {
   justify-content: center;
 }
 
+.embla__next:hover, .embla__prev:hover {
+  cursor: pointer;
+}
+
 .embla__next {
   align-self: end;
 }
@@ -126,7 +134,6 @@ a:link:visited {
 }
 
 .embla__controls, .embla__dots {
-  height: 100%;
   min-height: 2vh;
   display: flex;
   justify-content: center;
@@ -141,4 +148,10 @@ a:link:visited {
   background-color: var(--font);
   height: 2vh;
   width: 2vh;
+}
+
+@media screen and (min-width: 1200px) {
+  .embla__slide {
+    flex: 0 0 100%;
+  }
 }

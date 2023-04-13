@@ -39,6 +39,21 @@
     gap: 1rem;
 }
 
+.containerM0 {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;    
+}
+
+.col2 {
+    width: 60%;
+}
+
+.gridContainer {
+    display: grid;
+}
+
 .imageContainer {
     display: grid;
     grid-template-columns: repeat(auto-fill, 100%);
@@ -114,6 +129,10 @@ a:hover > .primaryText {
     scroll-margin-top: 50px;
 }
 
+.smallMargin {
+    margin: 1rem 0;
+}
+
 .linkNoStyles {
     font-variant: normal;
     font-style: normal;
@@ -140,7 +159,6 @@ a:hover > .primaryText {
         width: 80%;
         margin: 4rem auto 0 auto;
     }
-    
 
     .imageContainer {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -156,6 +174,10 @@ a:hover > .primaryText {
     }
 
     .inlineContainer {
+        flex-direction: row;
+    }
+    
+    .containerM0 {
         flex-direction: row;
     }
 
