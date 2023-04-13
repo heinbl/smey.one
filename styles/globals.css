@@ -150,7 +150,7 @@ a:link:visited {
   width: 2vh;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 900px) {
   .embla__slide {
     flex: 0 0 100%;
   }

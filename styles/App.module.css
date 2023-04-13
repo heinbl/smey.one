@@ -177,16 +177,16 @@ a:hover > .primaryText {
         flex-direction: row;
     }
     
-    .containerM0 {
-        flex-direction: row;
-    }
-
     .topHeaderPadding {
         margin-top: 0;
     }
 }
 
 @media screen and (min-width: 1200px) {
+    .containerM0 {
+        flex-direction: row;
+    }
+
 
     .imageContainer {
         grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));

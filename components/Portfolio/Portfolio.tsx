@@ -20,7 +20,7 @@ export const Portfolio: React.FC<PortfolioProps> = (): JSX.Element => {
       <div className={[appStyles.containerM0, appStyles.flexV].join(" ")}>
         <h1>Portfolio</h1>
         <PortfolioItem
-          title="VOSS - eine Software zur Rechnungserstellung"
+          title="VOSS"
           githubName="voss-web"
           images={[voss1, voss2, voss3, voss4]}
         >
@@ -37,7 +37,7 @@ export const Portfolio: React.FC<PortfolioProps> = (): JSX.Element => {
               rel="noopener noreferrer"
               className={ styles.projectLink }
             >
-              <GithubLogo size="3vh" weight="regular" />
+              <GithubLogo size="2rem" weight="regular" />
             </a>
           </div>
         </PortfolioItem>
