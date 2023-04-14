@@ -1,18 +1,17 @@
 import type { StaticImageData } from "next/image"
 import { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from 'embla-carousel-react'
-import AutoHeight from "embla-carousel-auto-height";
-import { CarouselDot } from "@components/CarouselDot";
+import { CarouselDot } from "@components/Carousel/";
 import { ArrowRight, ArrowLeft } from "@phosphor-icons/react";
 import Image from "next/image";
 import { InlineImage } from "@components/InlineImage";
 import rgbPlaceholder from "@lib/placeholder";
 
-interface SlideshowProps {
+interface CarouselProps {
   images: Array<StaticImageData>,
 }
 
-const Slideshow: React.FC<SlideshowProps> = ({ images }): JSX.Element => {
+const Carousel: React.FC<CarouselProps> = ({ images }): JSX.Element => {
   const [scrollSnapList, setScrollSnapList] = useState<number[]>([]);
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
   const [carouselRef, emblaApi] = useEmblaCarousel(
@@ -92,4 +91,4 @@ const Slideshow: React.FC<SlideshowProps> = ({ images }): JSX.Element => {
   );
 }
 
-export default Slideshow;
+export default Carousel;

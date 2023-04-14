@@ -1,6 +1,5 @@
 .projectLinks {
   display: flex;
-  margin: 1rem 0;
 }
 
 .projectLink {
@@ -25,6 +24,12 @@
 .portfolioItemInfo {
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (min-width: 900px) {
+  .projectLinks {
+    margin-bottom: 1rem;
+  }
 }
 
 @media screen and (min-width: 1200px) {

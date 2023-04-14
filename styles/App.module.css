@@ -19,6 +19,56 @@
     min-height: 100vh;
 }
 
+.focusText > *{
+    font-size: 1.3rem;
+}
+
+.teaserLink, .teaserLink:visited, .teaserLink:link {
+    position: relative;
+    text-decoration: none;
+    color: var(--font);
+    transition: all .15s ease-in;
+}
+
+.teaserLink::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2%;
+    width: 0;
+    background-color: var(--font);
+    z-index: -1;
+    animation: underline 4s ease-in-out infinite;
+}
+
+.teaserLink::after {
+    transition: all .15s ease-in;
+    width: 100%;
+    font-style: italic;
+    color: var(--background);
+    z-index: 1;
+}
+
+.teaserLink:hover {
+    font-style: italic;
+    background-color: var(--font);
+    color: var(--background);
+    animation-play-state: paused;
+}
+
+.teaserLink:hover::after {
+    background-color: var(--background);
+}
+
+.bigLink,
+.bigLink:visited,
+.bigLink:link {
+    font-size: 4rem;
+    font-family: 'Cormorant', serif;
+}
+
 .light {
     background-color: var(--font);
     color: var(--background);
@@ -71,7 +121,6 @@
     color: var(--font);
     border: 1px solid var(--font);
     border-radius: 4px;
-    font-size: 0.7em;
     font-family: inherit;
     padding: 0.7rem 2rem;
     transition: all .25s ease-out;
@@ -133,6 +182,14 @@ a:hover > .primaryText {
     margin: 1rem 0;
 }
 
+.mediumMargin {
+    margin: 2rem 0;
+}
+
+.noMargin {
+    margin: 0;
+}
+
 .linkNoStyles {
     font-variant: normal;
     font-style: normal;
@@ -190,5 +247,18 @@ a:hover > .primaryText {
 
     .imageContainer {
         grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+    }
+}
+
+@keyframes underline {
+    0% {
+        width: 0;
+    }
+    
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
     }
 }

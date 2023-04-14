@@ -47,11 +47,17 @@ return (
                 Home
               </Link>
               <Link 
-                className={[subpath === 'portfolio' ? styles.hamburgerItemSelected : '', styles.hamburgerItem].join(" ")}
+                className={[(path === 'simon') ? styles.hamburgerItemSelected : '', styles.hamburgerItem].join(" ")}
+                onClick={() => setShowHamburger(false)}
+                href="/simon">
+                Simon
+              </Link>
+              <Link 
+                className={[subpath === 'projekte' ? styles.hamburgerItemSelected : '', styles.hamburgerItem].join(" ")}
                 onClick={() => setShowHamburger(false)}
                 scroll={false}
-                href="/#portfolio">
-                Portfolio
+                href="/#projekte">
+                Projekte
               </Link>
               <Link
                 className={[path === 'drechseln' ? styles.hamburgerItemSelected : '', styles.hamburgerItem].join(" ")}
@@ -84,10 +90,14 @@ return (
         </label>
       </nav>
       <nav className={styles.nav}>
+              <Link className={path === 'simon' ? styles.navItemSelected : ''}
+                href="/simon">
+                Simon
+              </Link>
               <Link 
                 scroll={false}
-                href="/#portfolio">
-                Portfolio
+                href="/#projekte">
+                Projekte
               </Link>
               <Link className={path === 'drechseln' ? styles.navItemSelected : ''}
                 href="/drechseln">

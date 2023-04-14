@@ -15,7 +15,13 @@ const Info: React.FC<InfoProps> = (): JSX.Element => {
           <div className={styles.hero}>
             <h1 className={styles.headline}>
               Moin.<br />
-              Ich bin Simon,
+              Ich bin{' '} 
+              <Link
+                href="/simon"
+                className={ styles.nameTeaser }
+              >
+                Simon
+              </Link>,
             </h1>
             <p className={styles.subHeadline}>
               ein Full-Stack-Entwickler aus dem schönen Oldenburg.
@@ -48,9 +54,9 @@ const Info: React.FC<InfoProps> = (): JSX.Element => {
               </a>
               <a
                 className={ [appStyles.actionButton, appStyles.pageLink].join(" ")}
-                href="#portfolio"
+                href="#projekte"
               >
-                Portfolio
+                Projekte
                 <ArrowDown size="1rem" />
               </a>
             </div>
