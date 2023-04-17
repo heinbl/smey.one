@@ -21,50 +21,29 @@
 
 .focusText > *{
     font-size: 1.3rem;
+    margin-bottom: 1rem;
 }
 
-.teaserLink, .teaserLink:visited, .teaserLink:link {
+.teaserLink,
+.teaserLink:visited,
+.teaserLink:link {
     position: relative;
     text-decoration: none;
-    color: var(--font);
-    transition: all .15s ease-in;
-}
-
-.teaserLink::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 2%;
-    width: 0;
+    display: inline-block;
     background-color: var(--font);
-    z-index: -1;
-    animation: underline 4s ease-in-out infinite;
-}
-
-.teaserLink::after {
-    transition: all .15s ease-in;
-    width: 100%;
-    font-style: italic;
     color: var(--background);
-    z-index: 1;
+    transition: all .15s ease-in;
 }
 
 .teaserLink:hover {
     font-style: italic;
-    background-color: var(--font);
-    color: var(--background);
-    animation-play-state: paused;
-}
-
-.teaserLink:hover::after {
-    background-color: var(--background);
+    transform: translateX(5px);
 }
 
 .bigLink,
 .bigLink:visited,
 .bigLink:link {
+    display: inline-block;
     font-size: 4rem;
     font-family: 'Cormorant', serif;
 }
@@ -109,6 +88,14 @@
     grid-template-columns: repeat(auto-fill, 100%);
     align-items: center;
     gap: 1rem; 
+}
+
+.oneThird {
+    flex: 1 1 33.33%;
+}
+
+.twoThird {
+    flex: 3 1 66.66%;
 }
 
 .actionButton {
@@ -184,6 +171,10 @@ a:hover > .primaryText {
 
 .mediumMargin {
     margin: 2rem 0;
+}
+
+.bigMargin {
+    margin: 4rem 0;
 }
 
 .noMargin {

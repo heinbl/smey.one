@@ -44,40 +44,16 @@
 .nameTeaser, .nameTeaser:visited, .nameTeaser:link {
     position: relative;
     text-decoration: none;
-    color: var(--font);
     transition: all .15s ease-in;
-}
-
-.nameTeaser::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 2%;
-    width: 0;
+    display: inline-block;
     background-color: var(--font);
-    z-index: -1;
-    animation: underline 4s ease-in-out infinite;
-}
-
-.nameTeaser::after {
-    transition: all .15s ease-in;
-    width: 100%;
-    font-style: italic;
     color: var(--background);
-    z-index: 1;
 }
 
 .nameTeaser:hover {
-    font-style: italic;
-    background-color: var(--font);
-    color: var(--background);
+    font-style:italic;
     animation-play-state: paused;
-}
-
-.nameTeaser:hover::after {
-    background-color: var(--background);
+    transform: translateX(5px);
 }
 
 @media screen and (min-width: 600px) {

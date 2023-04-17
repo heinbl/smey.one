@@ -18,10 +18,10 @@ const Info: React.FC<InfoProps> = (): JSX.Element => {
               Ich bin{' '} 
               <Link
                 href="/simon"
-                className={ styles.nameTeaser }
+                className={ appStyles.teaserLink }
               >
-                Simon
-              </Link>,
+                Simon.
+              </Link>
             </h1>
             <p className={styles.subHeadline}>
               ein Full-Stack-Entwickler aus dem schönen Oldenburg.
