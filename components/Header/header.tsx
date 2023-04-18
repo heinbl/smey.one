@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import styles from './Header.module.css';
 import Logo from '@images/small.svg';
+import { EnvelopeSimpleOpen } from '@phosphor-icons/react';
 // import { Cormorant } from 'next/font/google';
 
 //TODO: fix font, when google fonts are fixed @vercel

@@ -22,7 +22,7 @@ export const Portfolio: React.FC<PortfolioProps> = (): JSX.Element => {
           images={[voss1, voss2, voss3, voss4]}
         >
           <p className={appStyles.smallMargin}>
-            Software um automatisiert erstellte Rechnung an Personen zu versenden.
+            Voss ist eine Software um automatisiert erstellte Rechnung an Personen zu versenden.
             Geschrieben in <b>Typescript</b> mit <b>Next.js</b> und <b>sqlite3</b>.
             Die Rechnung werden in einem festen Layout mit <b>jspdf</b> erstellt.
           </p>

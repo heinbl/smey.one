@@ -4,7 +4,7 @@ import { InlineImage } from '@components/InlineImage';
 import appStyles from '@styles/App.module.css';
 import styles from './About.module.css';
 import me from '@images/me.webp';
-import { ArrowRight } from '@phosphor-icons/react';
+import { ArrowSquareOut } from '@phosphor-icons/react';
 import rgbPlaceholder from '@lib/placeholder';
 
 interface AboutProps {
@@ -34,6 +34,7 @@ const About: React.FC<AboutProps> = (): JSX.Element => {
               target="_blank"
               rel="noopener noreferrer">
               Oldenburg
+              <ArrowSquareOut size="3vh"/>
             </a>
     ,{" "}
             mit einer Vorliebe für kreative Problemlösungen.
@@ -58,7 +59,7 @@ const About: React.FC<AboutProps> = (): JSX.Element => {
         <h2>Skills</h2>
         <div className={appStyles.inlineContainer}>
 */}
-          <figure className={ [ appStyles.quote ].join(" ") }>
+          <figure className={ appStyles.quote }>
             <q>
             There is nothing so useless as doing efficiently that which should not be done at all.
             </q>
