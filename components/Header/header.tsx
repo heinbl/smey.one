@@ -4,12 +4,13 @@ import { useRouter } from 'next/router';
 import styles from './Header.module.css';
 import Logo from '@images/small.svg';
 import { EnvelopeSimpleOpen } from '@phosphor-icons/react';
-// import { Cormorant } from 'next/font/google';
+ import { Cormorant_Garamond } from 'next/font/google';
 
 //TODO: fix font, when google fonts are fixed @vercel
-// const headerFont = Cormorant({
-//   subsets: ['latin'],
-// })
+ const headerFont = Cormorant_Garamond({
+   subsets: ['latin'],
+   weight: [ '500' ],
+ })
 
 export interface HeaderProps {};
 
@@ -19,7 +20,7 @@ export default function Header(props: HeaderProps): ReactElement {
   const path = pathname.replace(/\/+/i, '');
   const subpath = asPath.replace(/\/\#+/i, '');
 return (
-  <header className={[styles.header].join(" ")}>
+  <header className={[styles.header, headerFont.className].join(" ")}>
     <div className={styles.headerInner}>
       <div className={styles.imageContainer}>
         <Link 

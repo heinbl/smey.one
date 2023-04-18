@@ -6,6 +6,12 @@ import styles from './About.module.css';
 import me from '@images/me.webp';
 import { ArrowSquareOut } from '@phosphor-icons/react';
 import rgbPlaceholder from '@lib/placeholder';
+import { Cormorant_Garamond } from 'next/font/google';
+
+const cormorant = Cormorant_Garamond({
+  subsets: ['latin'],
+  weight: [ '400', '700'],
+});
 
 interface AboutProps {
 
@@ -14,7 +20,7 @@ interface AboutProps {
 const About: React.FC<AboutProps> = (): JSX.Element => {
   return (
     <section>
-      <h1>Moin. Ich bin Simon.</h1>
+      <h1 className={cormorant.className}>Moin. Ich bin Simon.</h1>
       <div className={styles.headerBox}>
         <InlineImage className={[styles.aboutImage, appStyles.oneThird].join(" ")}>
           <Image
@@ -59,7 +65,7 @@ const About: React.FC<AboutProps> = (): JSX.Element => {
         <h2>Skills</h2>
         <div className={appStyles.inlineContainer}>
 */}
-          <figure className={ appStyles.quote }>
+          <figure className={ [ appStyles.quote, cormorant.className ].join(" ") }>
             <q>
             There is nothing so useless as doing efficiently that which should not be done at all.
             </q>

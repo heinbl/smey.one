@@ -6,6 +6,12 @@ import { InlineImage } from '@components/InlineImage/';
 import appStyles from '@styles/App.module.css';
 import { GetStaticProps, NextPage } from "next";
 import { join } from 'path';
+import { Cormorant_Garamond } from 'next/font/google';
+
+const cormorant = Cormorant_Garamond({
+  subsets: ['latin'],
+  weight: [ '700'],
+});
 
 interface PageProps {
     imagePaths: string[];
@@ -17,7 +23,7 @@ const Drechseln: NextPage<PageProps> = ({ imagePaths }) => {
             <Head>
                 <title>Drechseln</title>   
             </Head>
-            <h1>
+            <h1 className={ cormorant.className }>
                 Ich und mein Holz.
             </h1>
             <p>

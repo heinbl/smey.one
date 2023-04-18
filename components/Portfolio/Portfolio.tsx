@@ -1,10 +1,16 @@
 import { PortfolioItem } from './'
 import appStyles from '@styles/App.module.css';
+import { Cormorant_Garamond } from 'next/font/google';
 // change
 import voss1 from '@images/portfolio/voss/1.webp';
 import voss2 from '@images/portfolio/voss/2.webp';
 import voss3 from '@images/portfolio/voss/3.webp';
 import voss4 from '@images/portfolio/voss/4.webp';
+
+const cormorant = Cormorant_Garamond({
+  subsets: ['latin'],
+  weight: [ '400', '700' ],
+});
 
 type PortfolioProps = {
 
@@ -15,7 +21,7 @@ export const Portfolio: React.FC<PortfolioProps> = (): JSX.Element => {
   return (
     <section id="projekte" className={[appStyles.scrollMargin, appStyles.pageHeight].join(" ")} >
       <div className={[appStyles.containerM0, appStyles.flexV].join(" ")}>
-        <h1>Projekte</h1>
+        <h1 className={cormorant.className}>Projekte</h1>
         <PortfolioItem
           title="VOSS"
           githubName="voss-web"

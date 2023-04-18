@@ -2,6 +2,12 @@ import Link from 'next/link';
 import { ArrowRight, ArrowDown } from '@phosphor-icons/react';
 import appStyles from '@styles/App.module.css';
 import styles from './Info.module.css';
+import { Cormorant_Garamond } from 'next/font/google';
+
+const cormorant = Cormorant_Garamond({
+  subsets: ['latin'],
+  weight: [ '400', '700' ],
+});
 
 type InfoProps = {
   
@@ -13,7 +19,7 @@ const Info: React.FC<InfoProps> = (): JSX.Element => {
       <div id="top-container" className={styles.topContainer}>
         <section className={styles.infoBox}>
           <div className={styles.hero}>
-            <h1 className={styles.headline}>
+            <h1 className={[styles.headline, cormorant.className].join(" ")}>
               Moin.<br />
               Ich bin{' '} 
               <Link
@@ -47,7 +53,7 @@ const Info: React.FC<InfoProps> = (): JSX.Element => {
                 className={ [appStyles.actionButton, appStyles.pageLink].join(" ") }
                 target="_blank" 
                 rel="noopener noreferrer" 
-                href="mailto:simon.meyer@mailbox.org">
+                href="mailto:hej-simon@mailbox.org">
                 { /* <span className={ appStyles.secondaryText }>simon.meyer@mailbox.org</span> */ }
                 Schreib &apos;ne Mail
                 <ArrowRight size="1rem" />
