@@ -27,7 +27,7 @@ const Drechseln: NextPage<PageProps> = ({ imagePaths }) => {
             <p>
                 So wird aus einem Stück <strong>Feuerholz </strong>beispielsweise eine
                 <strong> Pfeffermühle</strong>, oder ein <strong>Kerzenständer</strong>.
-                Vorraussetzung ist meist nur ein scharfes Werkzeug. Und natürlich eine
+                Voraussetzung ist meist nur ein scharfes Werkzeug. Und natürlich eine
                 <i> Drechselbank ;)</i>.
             </p>
             <p>&nbsp;</p>

@@ -186,7 +186,7 @@
     transition: color ease-in .15s;  
     padding: 0.3rem 0.6rem;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .navItemSelected { 

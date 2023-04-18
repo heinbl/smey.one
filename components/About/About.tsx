@@ -58,7 +58,7 @@ const About: React.FC<AboutProps> = (): JSX.Element => {
         <h2>Skills</h2>
         <div className={appStyles.inlineContainer}>
 */}
-          <figure className={ [ appStyles.mediumMargin, appStyles.quote ].join(" ") }>
+          <figure className={ [ appStyles.quote ].join(" ") }>
             <q>
             There is nothing so useless as doing efficiently that which should not be done at all.
             </q>
