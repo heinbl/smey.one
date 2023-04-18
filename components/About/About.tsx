@@ -13,7 +13,7 @@ interface AboutProps {
 
 const About: React.FC<AboutProps> = (): JSX.Element => {
   return (
-    <div>
+    <section>
       <h1>Moin. Ich bin Simon.</h1>
       <div className={styles.headerBox}>
         <InlineImage className={[styles.aboutImage, appStyles.oneThird].join(" ")}>
@@ -35,7 +35,7 @@ const About: React.FC<AboutProps> = (): JSX.Element => {
               rel="noopener noreferrer">
               Oldenburg
             </a>
-            {" "}
+    ,{" "}
             mit einer Vorliebe für kreative Problemlösungen.
           </p>
           { /* 
@@ -50,10 +50,25 @@ const About: React.FC<AboutProps> = (): JSX.Element => {
           </p>
         </section>
       </div>
+    {/* 
           <Link href="/#projekte" className={[appStyles.bigLink, appStyles.teaserLink, appStyles.mediumMargin].join(" ")}>
             Meine Projekte
             </Link>
-      <div className={appStyles.smallMargin}>
+      <section className={appStyles.smallMargin}>
+        <h2>Skills</h2>
+        <div className={appStyles.inlineContainer}>
+*/}
+          <figure className={ [ appStyles.mediumMargin, appStyles.quote ].join(" ") }>
+            <q>
+            There is nothing so useless as doing efficiently that which should not be done at all.
+            </q>
+            <figcaption>— Peter Drucker</figcaption>
+          </figure>
+    {/*
+        </div>
+      </section>
+*/}
+      <section className={appStyles.smallMargin}>
         <h2>Offline</h2>
         <div className={appStyles.inlineContainer}>
           <section>
@@ -62,7 +77,7 @@ const About: React.FC<AboutProps> = (): JSX.Element => {
               Oder ich sitze auf meinem Rennrad.
             </p>
             <p>
-              Ansonsten findet man mich in meiner Werkstatt in der ich hauptsächlich
+              Ansonsten findet man mich in meiner Werkstatt, in der ich hauptsächlich
               {" "}
               <Link
                 href="/drechseln"
@@ -70,8 +85,8 @@ const About: React.FC<AboutProps> = (): JSX.Element => {
             </p>
           </section>
         </div>
-      </div>
-    </div>
+      </section>
+    </section>
   );
 }
 

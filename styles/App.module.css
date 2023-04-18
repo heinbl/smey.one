@@ -45,7 +45,20 @@
 .bigLink:link {
     display: inline-block;
     font-size: 4rem;
-    font-family: 'Cormorant', serif;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.quote {
+    padding: 1rem;
+    flex: 1 1 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+}
+
+.quote figcaption {
+    font-size: 1.5rem;
 }
 
 .light {

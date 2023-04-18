@@ -9,7 +9,7 @@
 }
 
 .headline {
-    font-family: 'Cormorant', serif;
+    font-family: 'Cormorant Garamond', serif;
     color: var(--font);
     margin-top: 0;
     font-size: 4.5em;
@@ -39,21 +39,6 @@
 .hero {
     animation: fadeInUp .5s ease;
     margin: 0 0 2rem 0;
-}
-
-.nameTeaser, .nameTeaser:visited, .nameTeaser:link {
-    position: relative;
-    text-decoration: none;
-    transition: all .15s ease-in;
-    display: inline-block;
-    background-color: var(--font);
-    color: var(--background);
-}
-
-.nameTeaser:hover {
-    font-style:italic;
-    animation-play-state: paused;
-    transform: translateX(5px);
 }
 
 @media screen and (min-width: 600px) {

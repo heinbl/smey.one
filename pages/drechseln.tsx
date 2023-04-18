@@ -13,7 +13,7 @@ interface PageProps {
 
 const Drechseln: NextPage<PageProps> = ({ imagePaths }) => {
     return (
-        <div className={ [appStyles.container, appStyles.withFade].join(" ")}>
+        <section className={ [appStyles.container, appStyles.withFade].join(" ")}>
             <Head>
                 <title>Drechseln</title>   
             </Head>
@@ -34,7 +34,7 @@ const Drechseln: NextPage<PageProps> = ({ imagePaths }) => {
             <p>
                 <i>Hier ein paar Eindrücke.</i>
             </p>
-            <div className={ appStyles.imageContainer }>
+            <article className={ appStyles.imageContainer }>
                 {
                     imagePaths && imagePaths.map( (filename, i)=> { 
                         return (
@@ -53,8 +53,8 @@ const Drechseln: NextPage<PageProps> = ({ imagePaths }) => {
                         );
                     })
                 }
-            </div>
-        </div>    
+            </article>
+        </section>    
     );
 }
 
