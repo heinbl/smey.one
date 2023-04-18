@@ -80,7 +80,7 @@ return (
                 className={styles.hamburgerItem}
                 target="_blank"
                 rel="noopener noreferrer"
-                href="mailto:simon.meyer@mailbox.org"
+                href="mailto:hej-simon@mailbox.org"
                 onClick={() => setShowHamburger(!false)}
                 >
                 Kontakt
@@ -113,7 +113,7 @@ return (
               <Link
                 target="_blank"
                 rel="noopener noreferrer"
-                href="mailto:simon.meyer@mailbox.org">
+                href="mailto:hej-simon@mailbox.org">
                 Kontakt
               </Link>
         { /* <Link href="/" className={ styles.navItem }>About</Link> */}

@@ -30,7 +30,7 @@
     position: relative;
     text-decoration: none;
     display: inline-block;
-    background-color: var(--font);
+    background-color: var(--accent);
     color: var(--background);
     transition: all .2s ease-in;
 }
@@ -59,6 +59,7 @@
 
 .quote figcaption {
     font-size: 1.5rem;
+    color: var(--accent);
 }
 
 .light {
@@ -131,7 +132,7 @@
 .actionButton::after {
     content: '';
     position: absolute;
-    background-color: var(--font);
+    background-color: var(--accent);
     top:0;
     bottom: 0;
     left: 0;
@@ -148,6 +149,7 @@
 .actionButton:hover {
     cursor: pointer;
     color: var(--background);
+    border-color: var(--accent);
 }
 
 .pageLink, .pageLink:visited, .pageLink:link {

@@ -204,7 +204,7 @@
     height: 100%;
     width: 100% !important;
     margin: auto;
-    background-color: var(--font);
+    background-color: var(--accent) !important;
     transition: all ease-in .15s;
     z-index: -1;
 }
@@ -219,7 +219,7 @@
     height: 100%;
     width: 0;
     margin: auto;
-    background-color: var(--font);
+    background-color: var(--accent);
     transition: all ease-in .15s;
     z-index: -1;
 }
@@ -235,9 +235,9 @@
 }
 
 .headerImage {
-    stroke: var(--font);
+    stroke: var(--accent);
     /* stroke-width: 2%; */
-    color: var(--font);
+    color: var(--accent);
     height: auto;
     min-width: 50px;
     width: 3vw;
@@ -248,7 +248,7 @@
 
 .headerImage:hover {
     color: var(--background);
-    stroke: var(--font);
+    stroke: var(--accent);
 }
 
 .headerImage:hover {

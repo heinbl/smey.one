@@ -13,12 +13,13 @@
     /* --accent: rgb(60, 82, 51); */
     /* --accent: rgb(216, 216, 246); */
     /* --accent: rgb(242, 193, 78); */
-    --accent: rgb(220, 255, 253);
+    /* --accent: rgb(220, 255, 253); */
+    --accent: rgb(252, 223, 166);
     /* --accent: rgb(0, 0, 0); */
     /* --link: rgb(38, 64, 39); */
     --link: rgb(220, 255, 253);
     /* --link-visited: rgb(60, 82, 51); */
-    --link-visited: rgb(71, 128, 125);
+    --link-visited: rgb(250, 206, 117);
     --shadow: rgba(100, 100, 111, 0.3);
 }
 
@@ -63,6 +64,10 @@ p {
 a {
     text-decoration: underline;
     color: var(--accent);
+}
+
+a:hover {
+  color: var(--link-visited);
 }
 
 a:link:visited {
