@@ -5,6 +5,7 @@ import appStyles from '@styles/App.module.css';
 import styles from './About.module.css';
 import me from '@images/me.webp';
 import { ArrowRight } from '@phosphor-icons/react';
+import rgbPlaceholder from '@lib/placeholder';
 
 interface AboutProps {
 
@@ -19,7 +20,9 @@ const About: React.FC<AboutProps> = (): JSX.Element => {
           <Image
             src={me}
             alt="this is a picture of simon."
-            title="Simon">
+            title="Simon"
+            placeholder="blur"
+            blurDataURL={rgbPlaceholder(38, 64, 39)}>
           </Image>
         </InlineImage>
         <section className={[appStyles.focusText, appStyles.twoThird].join(" ")}>
