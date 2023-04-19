@@ -28,7 +28,7 @@ const About: React.FC<AboutProps> = (): JSX.Element => {
             alt="this is a picture of simon."
             title="Simon"
             placeholder="blur"
-            blurDataURL={rgbPlaceholder(38, 64, 39)}>
+            blurDataURL={rgbPlaceholder(252, 223, 166)}>
           </Image>
         </InlineImage>
         <section className={[appStyles.focusText, appStyles.twoThird].join(" ")}>
