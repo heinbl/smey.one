@@ -178,6 +178,7 @@ a:hover > .primaryText {
 
 .scrollMargin {
     scroll-margin-top: 50px;
+    scroll-snap-margin-top: 50px;
 }
 
 .smallMargin {
@@ -217,6 +218,7 @@ a:hover > .primaryText {
 @media screen and (min-width: 600px) {
     .scrollMargin {
         scroll-margin-top: 50px;
+        scroll-snap-margin-top: 50px;
     }
     .container {
         width: 80%;
@@ -230,6 +232,7 @@ a:hover > .primaryText {
 
 @media screen and (min-width: 900px) {
     .scrollMargin {
+        scroll-snap-margin-top: 0;
         scroll-margin-top: 0;
     }
     .container {

@@ -25,7 +25,8 @@ return (
       <div className={styles.imageContainer}>
         <Link 
           scroll={false}
-          href="/#intro">
+          href="/#intro"
+          title="Startseite">
           <Logo
             className={[styles.headerImage, showHamburger ? styles.hamburgerHeader : ''].join(" ")}
             onClick={ () => setShowHamburger(false) }
@@ -45,26 +46,30 @@ return (
                 scroll={false}
                 className={[(subpath === 'intro' || (subpath === '/' && !path)) ? styles.hamburgerItemSelected : '', styles.hamburgerItem].join(" ")}
                 onClick={() => setShowHamburger(false)}
-                href="/#intro">
+                href="/#intro"
+                title="Startseite">
                 Home
               </Link>
               <Link 
                 className={[(path === 'simon') ? styles.hamburgerItemSelected : '', styles.hamburgerItem].join(" ")}
                 onClick={() => setShowHamburger(false)}
-                href="/simon">
+                href="/simon"
+                title="Simon">
                 Simon
               </Link>
               <Link 
                 className={[subpath === 'projekte' ? styles.hamburgerItemSelected : '', styles.hamburgerItem].join(" ")}
                 onClick={() => setShowHamburger(false)}
                 scroll={false}
-                href="/#projekte">
+                href="/#projekte"
+                title="Projekte">
                 Projekte
               </Link>
               <Link
                 className={[path === 'drechseln' ? styles.hamburgerItemSelected : '', styles.hamburgerItem].join(" ")}
                 href="/drechseln"
                 onClick={() => setShowHamburger(false)}
+                title="Drechseln"
                 >
                 Drechseln
               </Link>
@@ -73,6 +78,7 @@ return (
                 target="_blank"
                 rel="noopener noreferrer"
                 href="/files/cv.pdf"
+                title="Lebenslauf"
                 onClick={() => setShowHamburger(!false)}
                 >
                 Cv
@@ -82,6 +88,7 @@ return (
                 target="_blank"
                 rel="noopener noreferrer"
                 href="mailto:hej-simon@mailbox.org"
+                title="Kontakt"
                 onClick={() => setShowHamburger(!false)}
                 >
                 Kontakt
@@ -93,27 +100,32 @@ return (
       </nav>
       <nav className={styles.nav}>
               <Link className={path === 'simon' ? styles.navItemSelected : ''}
-                href="/simon">
+                href="/simon"
+                title="Simon">
                 Simon
               </Link>
               <Link 
                 scroll={false}
+                title="Projekte"
                 href="/#projekte">
                 Projekte
               </Link>
               <Link className={path === 'drechseln' ? styles.navItemSelected : ''}
+              title="Drechseln"
                 href="/drechseln">
                 Drechseln
               </Link>
               <Link
                 target="_blank"
                 rel="noopener noreferrer"
+                title="Lebenslauf"
                 href="/files/cv.pdf">
                 Cv
               </Link>
               <Link
                 target="_blank"
                 rel="noopener noreferrer"
+                title="Kontakt"
                 href="mailto:hej-simon@mailbox.org">
                 Kontakt
               </Link>
