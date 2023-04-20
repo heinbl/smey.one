@@ -119,8 +119,8 @@
     gap: 0.5rem;
     position: relative;
     background-color: transparent;
-    color: var(--font);
-    border: 1px solid var(--font);
+    color: var(--accent);
+    border: 1px solid var(--accent);
     border-radius: 4px;
     font-family: inherit;
     padding: 0.7rem 2rem;
@@ -129,10 +129,15 @@
     z-index: 1;
 }
 
+.actionButton a {
+    color: var(--accent);
+}
+
 .actionButton::after {
     content: '';
     position: absolute;
     background-color: var(--accent);
+    color: var(--accent);
     top:0;
     bottom: 0;
     left: 0;
@@ -153,7 +158,7 @@
 }
 
 .pageLink, .pageLink:visited, .pageLink:link {
-    color: var(--font);
+    color: inherit;
     text-transform: uppercase;
     text-decoration: none;
     transition: all .25s ease-in-out;
