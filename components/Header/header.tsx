@@ -9,7 +9,7 @@ import { EnvelopeSimpleOpen } from '@phosphor-icons/react';
 //TODO: fix font, when google fonts are fixed @vercel
  const headerFont = Cormorant_Garamond({
    subsets: ['latin'],
-   weight: [ '500' ],
+   weight: [ '400' ],
  })
 
 export interface HeaderProps {};

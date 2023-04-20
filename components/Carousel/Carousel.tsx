@@ -62,6 +62,9 @@ const Carousel: React.FC<CarouselProps> = ({ images }): JSX.Element => {
                     alt="image showing voss invoice software"
                     placeholder="blur"
                     blurDataURL={rgbPlaceholder(252, 223, 166)}
+                    sizes="
+                    (max-width: 600px) 100vw,
+                    50vw"
                   />
                 </InlineImage>
               ))

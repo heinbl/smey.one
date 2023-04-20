@@ -54,6 +54,10 @@ const Drechseln: NextPage<PageProps> = ({ imagePaths }) => {
                                     alt="image showing woodwork"
                                     placeholder="blur"
                                     blurDataURL={ rgbPlaceholder(252, 223, 166) }
+                                    sizes="
+                                    (max-width: 600px) 100vw,
+                                    (max-width: 900px) 50vw,
+                                    33vw"
                                 />
                             </InlineImage>
                         );
