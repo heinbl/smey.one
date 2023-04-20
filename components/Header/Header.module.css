@@ -94,7 +94,7 @@
 .hamburger::after, 
 .hamburger::before {
     content: '';
-    color: var(--font);
+    color: var(--accent);
     border-radius: 2em;
     background-color: currentColor;
     position: absolute;
@@ -113,7 +113,7 @@
 
 .hamburger::after {
     bottom: 0;
-    box-shadow: 0 -14px var(--font);
+    box-shadow: 0 -14px var(--accent);
 }
 
 .hamburgerLinks {
