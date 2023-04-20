@@ -73,7 +73,9 @@ const Carousel: React.FC<CarouselProps> = ({ images }): JSX.Element => {
         </div>
       </div>
       <div className="embla__controls">
-        <button className="embla__prev" onClick={onPrevClick}>
+        <button className="embla__prev" 
+        onClick={onPrevClick}
+        aria-label="Previous image">
           <ArrowLeft size="3vh" />
         </button>
         <div className="embla__dots">
@@ -81,12 +83,15 @@ const Carousel: React.FC<CarouselProps> = ({ images }): JSX.Element => {
             <CarouselDot
               selected={selectedIndex === key}
               key={key}
+              aria-label={ `View image ${key}`}
               onClick={() => scrollTo(key)}>
             </CarouselDot>
           ))
           }
         </div>
-        <button className="embla__next" onClick={onNextClick}>
+        <button className="embla__next" 
+        onClick={onNextClick}
+        aria-label="Next image">
           <ArrowRight size="3vh" />
         </button>
       </div>
