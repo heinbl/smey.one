@@ -27,6 +27,7 @@ const About: React.FC<AboutProps> = (): JSX.Element => {
             src={me}
             alt="this is a picture of simon."
             title="Simon"
+            loading="eager"
             placeholder="blur"
             blurDataURL={rgbPlaceholder(252, 223, 166)}
             sizes="
