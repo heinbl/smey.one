@@ -64,7 +64,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }): JSX.Element => {
                     blurDataURL={rgbPlaceholder(252, 223, 166)}
                     sizes="
                     (max-width: 600px) 100vw,
-                    33vw"
+                    50vw"
                   />
                 </InlineImage>
               ))
