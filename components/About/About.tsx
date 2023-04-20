@@ -31,7 +31,8 @@ const About: React.FC<AboutProps> = (): JSX.Element => {
             blurDataURL={rgbPlaceholder(252, 223, 166)}
             sizes="
             (max-width: 600px) 100vw,
-            50vw"
+            (max-width: 900px) 50vw,
+            33vw"
             >
           </Image>
         </InlineImage>
