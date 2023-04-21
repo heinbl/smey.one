@@ -33,7 +33,7 @@ const PortfolioItem: React.FC<PortfolioItemProps> = (
               rel="noopener noreferrer"
               className={styles.projectLink}
             >
-              <GithubLogo size="2rem" weight="regular" />
+              <GithubLogo size="3vh" weight="regular" />
             </a>
           </div>
         </div>

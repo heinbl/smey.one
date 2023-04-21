@@ -46,7 +46,7 @@ const About: React.FC<AboutProps> = (): JSX.Element => {
               target="_blank"
               rel="noopener noreferrer">
               Oldenburg
-              <ArrowSquareOut size="3vh"/>
+              <ArrowSquareOut size="2vh"/>
             </a>
     ,{" "}
             mit einer Vorliebe für kreative Problemlösungen.

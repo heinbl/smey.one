@@ -56,14 +56,14 @@ const Info: React.FC<InfoProps> = (): JSX.Element => {
                 href="mailto:hej-simon@mailbox.org">
                 { /* <span className={ appStyles.secondaryText }>simon.meyer@mailbox.org</span> */ }
                 Schreib &apos;ne Mail
-                <ArrowRight size="1rem" />
+                <ArrowRight size="3vh" />
               </a>
               <a
                 className={ [appStyles.actionButton, appStyles.pageLink].join(" ")}
                 href="#projekte"
               >
                 Projekte
-                <ArrowDown size="1rem" />
+                <ArrowDown size="3vh" />
               </a>
             </div>
           </div>
