@@ -5,6 +5,7 @@ export default function Document() {
     <Html>
       <Head>
         <meta name="description" content="Simon Meyer ist ein Full-Stack-Entwickler aus Nartum/Oldenburg." />
+        <meta charSet="UTF-8" />
         <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png" />
         <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png" />
         <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png" />
@@ -19,11 +20,9 @@ export default function Document() {
         <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
         <link rel="manifest" href="/favicon/manifest.json" />
-        <meta name="msapplication-TileColor" content="#264027"></meta>
-        <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png"></meta>
-        <meta name="theme-color" content="#"></meta>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <meta name="msapplication-TileColor" content="#264027" />
+        <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#264027" />
       </Head>
       <body>
         <Main />
