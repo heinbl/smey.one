@@ -39,7 +39,7 @@ const About: React.FC<AboutProps> = (): JSX.Element => {
         </InlineImage>
         <section className={[appStyles.focusText, appStyles.twoThird].join(" ")}>
           <p>
-            Ich bin Simon Meyer, ein Full-Stack-Entwickler aus {" "}
+            Ein Full-Stack-Entwickler aus {" "}
             <a
               href="https://www.openstreetmap.org/relation/62409"
               title="Oldenburg Openstreetmap"
@@ -48,7 +48,7 @@ const About: React.FC<AboutProps> = (): JSX.Element => {
               Oldenburg
               <ArrowSquareOut size="2vh"/>
             </a>
-    ,{" "}
+    {" "}
             mit einer Vorliebe für kreative Problemlösungen.
           </p>
           { /* 

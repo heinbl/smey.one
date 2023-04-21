@@ -50,7 +50,7 @@ const Info: React.FC<InfoProps> = (): JSX.Element => {
             </p>
             <div className={ [appStyles.inlineContainer, styles.buttonContainer ].join(" ") } >
               <a
-                className={ [appStyles.actionButton, appStyles.pageLink].join(" ") }
+                className={ [appStyles.simpleButton, appStyles.primaryButton, appStyles.linkNoStyles].join(" ") }
                 target="_blank" 
                 rel="noopener noreferrer" 
                 href="mailto:hej-simon@mailbox.org">
