@@ -118,7 +118,7 @@
     justify-content: center;
     gap: 0.5rem;
     position: relative;
-    background-color: transparent;
+    background-color: none;
     color: var(--accent);
     border: 1px solid var(--accent);
     border-radius: 4px;
@@ -165,7 +165,7 @@
 
 .pageLink:hover {
     color: var(--background) !important;
-    background-color: var(--font);
+    background-color: var(--accent);
 }
 
 a > .secondaryText {
