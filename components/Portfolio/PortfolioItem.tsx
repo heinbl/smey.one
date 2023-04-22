@@ -23,9 +23,9 @@ const PortfolioItem: React.FC<PortfolioItemProps> = (
     <article>
       <h2>{title}</h2>
       <div className={appStyles.containerM0}>
-        <div className={styles.portfolioItemInfo}>
+        <section className={styles.portfolioItemInfo}>
           {children}
-          <div className={styles.projectLinks}>
+          <aside className={styles.projectLinks}>
             <a
               href={ `https://github.com/smeyx/${ githubName }` }
               title="Auf Github ansehen"
@@ -35,8 +35,8 @@ const PortfolioItem: React.FC<PortfolioItemProps> = (
             >
               <GithubLogo size="3vh" weight="regular" />
             </a>
-          </div>
-        </div>
+          </aside>
+        </section>
         <div className={styles.carousel}>
           <Carousel images={images}></Carousel>
         </div>

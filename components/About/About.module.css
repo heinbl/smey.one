@@ -5,6 +5,31 @@
     gap: 2rem;
 }
 
+.codeIcon {
+  fill: var(--font);
+  stroke: var(--font);
+  color: var(--font);
+  height: auto;
+  flex: 0 1 6vh;
+}
+
+.codeIconWrapper {
+  padding: 0.5rem 0;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.codeIconWrapper:first-of-type {
+  padding-top: 1rem;
+}
+
+.codeIconWrapper:last-of-type {
+  padding-bottom: 2rem;
+}
+
 @media screen and (min-width: 900px) {
   .headerBox {
     flex-direction: row;
