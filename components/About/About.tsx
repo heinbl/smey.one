@@ -85,7 +85,6 @@ const About: React.FC<AboutProps> = (): JSX.Element => {
           <PhpLogo className={styles.codeIcon} />
           <NextLogo className={styles.codeIcon} />
         </aside>
-        <p>Außerdem besitze ich große Erfahrung im Umgang mit Linux. Im Alltag benutze ich seit Jahren hauptsächlich Linux.</p>
       </section>
     {/* 
           <Link href="/#projekte" className={[appStyles.bigLink, appStyles.teaserLink, appStyles.mediumMargin].join(" ")}>

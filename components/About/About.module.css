@@ -10,7 +10,7 @@
   stroke: var(--font);
   color: var(--font);
   height: auto;
-  flex: 0 1 6vh;
+  flex: 0 0 10vh;
 }
 
 .codeIconWrapper {
@@ -18,8 +18,8 @@
   gap: 1rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .codeIconWrapper:first-of-type {
