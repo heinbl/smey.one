@@ -72,7 +72,7 @@ const About: React.FC<AboutProps> = (): JSX.Element => {
           </p>
         </section>
       </div>
-      <section className={appStyles.smallMargin}>
+      <section className={appStyles.mediumMargin}>
         <h2>Skills</h2>
         <p>Ich arbeite mit einem vielseitigen Skillset im Front- und Backend. Aktuell begeistern mich hauptsächlich die folgenden Technologien.</p>
         <aside className={styles.codeIconWrapper}>
@@ -80,6 +80,8 @@ const About: React.FC<AboutProps> = (): JSX.Element => {
           <TypescriptLogo className={styles.codeIcon} />
           <HtmlLogo className={styles.codeIcon} />
           <Css3Logo className={styles.codeIcon} />
+        </aside>
+        <aside className={styles.codeIconWrapper}>
           <ReactLogo className={styles.codeIcon} />
           <NodeLogo className={styles.codeIcon} />
           <PhpLogo className={styles.codeIcon} />
@@ -90,11 +92,11 @@ const About: React.FC<AboutProps> = (): JSX.Element => {
           <Link href="/#projekte" className={[appStyles.bigLink, appStyles.teaserLink, appStyles.mediumMargin].join(" ")}>
             Meine Projekte
             </Link>
-      <section className={appStyles.smallMargin}>
+      <section className={appStyles.mediumMargin}>
         <h2>Skills</h2>
         <div className={appStyles.inlineContainer}>
 */}
-          <figure className={ [ appStyles.quote, cormorant.className ].join(" ") }>
+          <figure className={ [ appStyles.mediumMargin, appStyles.quote, cormorant.className ].join(" ") }>
             <q>
             There is nothing so useless as doing efficiently that which should not be done at all.
             </q>
@@ -104,9 +106,9 @@ const About: React.FC<AboutProps> = (): JSX.Element => {
         </div>
       </section>
 */}
-      <section className={appStyles.smallMargin}>
+      <section className={appStyles.mediumMargin}>
         <h2>Offline</h2>
-          <section className={ appStyles.inlineContainer }>
+          <section >
             <p>
               Wenn ich nicht gerade am Rechner sitze, könnt ihr mich dabei erwischen, wie ich einen Basketball ins Körbchen werfe.
               Oder ich sitze auf meinem Rennrad.

@@ -3,8 +3,8 @@
 }
 
 .projectLink {
-  background-color: var(--font);
-  border: 1px solid var(--font);
+  background-color: var(--accent);
+  border: 1px solid var(--accent);
   color: var(--background);
   transition: all .15s ease-in;
   border-radius: 100%;
@@ -17,7 +17,7 @@
 }
 
 .projectLink:hover {
-  color: var(--font);
+  color: var(--accent);
   background-color: var(--background);
 }
 
