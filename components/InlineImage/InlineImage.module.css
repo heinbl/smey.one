@@ -1,0 +1,25 @@
+.imageContainer {
+    transition: all .2s ease-in;
+}
+
+.imageContainer > img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.imageContainer:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+    
+}
+
+@media screen and (min-width: 900px) {
+}
+
+@media screen and (min-width: 1200px) {
+    
+}

@@ -1,0 +1,105 @@
+.topContainer {
+    display: flex;
+    margin-bottom: 1rem;
+    flex-direction: column;
+}
+
+.buttonContainer {
+    margin-top: 1rem;
+}
+
+.headline {
+    color: var(--font);
+    margin-top: 0;
+    font-size: 4.5em;
+}
+
+.headline:first-of-type {
+    margin-top: 1rem;
+}
+
+.headline:last-of-type {
+    margin-bottom: 2rem;
+}
+
+.subHeadline {
+    color: var(--font);
+    font-size: 1.2em;
+    margin: 1rem 0;
+}
+
+.infoBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hero {
+    animation: fadeInUp .5s ease;
+    margin: 0 0 2rem 0;
+}
+
+@media screen and (min-width: 600px) {
+    .buttonContainer {
+        margin-top: 3rem;
+    }
+
+    .topContainer {
+        display: flex;        
+        flex-direction: row-reverse;
+        gap: 1.5rem;
+        padding: 1rem 0;
+        align-items: center;
+    }
+    
+    .container {
+        margin: 1rem auto;
+    }
+    
+    .infoBox {
+        display: block;
+        padding: 0;
+        align-self: center;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .headline {
+        font-size: 5em;
+    }
+    .infoBox {
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .headline {
+        font-size: 6em;
+    }
+}
+
+@keyframes underline {
+    0% {
+        width: 0;
+    }
+    
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);        
+        opacity: 1;
+    }
+}

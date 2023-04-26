@@ -1,0 +1,29 @@
+.headerBox {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.codeIconWrapper {
+  padding: 1rem 0 0.5rem 0;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.codeIcon {
+  fill: var(--font);
+  stroke: var(--font);
+  color: var(--font);
+  height: auto;
+  flex: 0 0 6vh;
+}
+
+@media screen and (min-width: 900px) {
+  .headerBox {
+    flex-direction: row;
+  }
+}

@@ -1,94 +1,134 @@
-.imageBox {
-    border-radius: 100%;
-    box-shadow: var(--shadow) 7px 7px 29px;
-    height: 250px;
-    width: 250px;
+/* .imageBox { */
+/*     border-radius: 100%; */
+/*     box-shadow: var(--shadow) 7px 7px 29px; */
+/*     height: 250px; */
+/*     width: 250px; */
+/* } */
+
+/* .rndImage { */
+/*     border-radius: 100%; */
+/* } */
+
+
+.buttonContainer {
+    margin-top: 1rem;
 }
 
-.rndImage {
-    border-radius: 100%;
-}
-
-.headline {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.subHeadline {
-    color: var(--font-light);
-    font-weight: 350;
-    font-size: 1.3em;
-}
-
-.intro {
-    margin: 3rem auto;
-    padding: 1rem;
+.imageContainer {
     display: flex;
-    width: 1200px;
-    max-width: 100%;
-    line-height: 1.6;
+    align-items: center;
+    min-width: 20%;
+    max-width: 50%;
+    margin: 0 auto;
+    border-radius: 1rem;
+    box-shadow: 0px 1px 4px var(--shadow);
 }
 
-.infoBox {
-    width: 35%;
-    max-width: 100%;
+.bgImage {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
 }
+
+
+.rotate90:hover {
+    transform: rotate(90deg);
+}
+
 
 .introParagraph {
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.descBox {
-    width: 60%;
-    margin-left: auto;
-    max-width: 100%;
-}
+@media screen and (min-width: 600px) {
 
-.mailMeButton {
-    background-color: var(--background);
-    border: 2px solid var(--accent);
-    color: var(--accent);
-    border-radius: 4px;
-    padding: 0 20px;
-    font-size: 1.2em;
-    height: 2em;
-    cursor: pointer;
-    transition: background-color .15s ease-in, color .15s ease-in;
-}
+    .imageContainer {
+        min-width: 35%;
+        width: 75%;
+        height: auto;
+    }
 
-.mailMeButton:hover {
-    background-color: var(--accent);
-    color: var(--background);
-}
+    .buttonContainer {
+        margin-top: 3rem;
+    }
 
-.container {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-@media screen and (max-width: 576px) {
+    .topContainer {
+        display: flex;        
+        flex-direction: row-reverse;
+        gap: 1.5rem;
+        padding: 1rem 0;
+        align-items: center;
+    }
+    
     .container {
-        margin-top: 5rem;
+        margin: 1rem auto;
+    }
+    
+    .infoBox {
+        display: block;
+        padding: 0;
+        align-self: center;
     }
 }
 
-@media screen and (max-width: 900px) {
-    .intro {
-        flex-direction: column;
-        width: 100%;
-        padding: 1rem;
-    }
-
+@media screen and (min-width: 900px) {
     .infoBox {
-        width: 100%;
+        padding: 0;
+    }
+    .imageContainer {
+        margin-right: 1rem;
+        min-width: 0;
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .imageContainer {
+        width: 20%;
+    }
+}
+
+/* @supports (mix-blend-mode: darken) { */
+/*     .pictureContainer::after { */
+/*         background-color: var(--background); */
+
+/*         mix-blend-mode: darken; */
+/*     } */
+/* } */
+
+/* @supports (mix-blend-mode: lighten) { */
+/*     .pictureContainer::before { */
+/*         background-color: var(--accent); */
+/*         mix-blend-mode: lighten; */
+/*     } */
+/* } */
+
+/* @media screen and (max-width: 900px) { */
+/*     .intro { */
+/*         flex-direction: column; */
+/*         width: 100%; */
+/*         padding: 1rem; */
+/*     } */
+
+/*     .infoBox { */
+/*         width: 100%; */
+/*     } */
+
+/*     .descBox { */
+/*         margin-top: 2rem; */
+/*         width: 100%; */
+/*     } */
+/* } */
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
     }
 
-    .descBox {
-        margin-top: 2rem;
-        width: 100%;
+    100% {
+        transform: translateY(0);        
+        opacity: 1;
     }
 }

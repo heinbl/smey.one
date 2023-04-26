@@ -1,0 +1,44 @@
+.projectLinks {
+  display: flex;
+}
+
+.projectLink {
+  background-color: var(--accent);
+  border: 1px solid var(--accent);
+  color: var(--background);
+  transition: all .15s ease-in;
+  border-radius: 100%;
+  height: 2rem;
+  width: 2rem;
+  padding: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectLink:hover {
+  color: var(--accent);
+  background-color: var(--background);
+}
+
+.portfolioItemInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 900px) {
+  .projectLinks {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolioItemInfo {
+    width: 40%;
+  }
+  
+  .carousel {
+    margin: 1rem;
+    width: 60%;
+  }
+}
