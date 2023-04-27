@@ -44,6 +44,7 @@ const Drechseln: NextPage<PageProps> = ({ imagePaths }) => {
                 {
                     imagePaths && imagePaths.map( (filename, i)=> { 
                         return (
+                            <>
                             <InlineImage key={i}>
                                 <Image
                                     key={i}
@@ -54,13 +55,14 @@ const Drechseln: NextPage<PageProps> = ({ imagePaths }) => {
                                     alt="image showing woodwork"
                                     placeholder="blur"
                                     blurDataURL={ rgbPlaceholder(252, 223, 166) }
-                                    loading={ i && i === 1 ? 'eager' : 'lazy' }
+                                    loading={ i === 0 ? 'eager' : 'lazy' }
                                     sizes="
                                     (max-width: 600px) 90vw,
                                     (max-width: 900px) 50vw,
                                     33vw"
                                 />
                             </InlineImage>
+                            </>
                         );
                     })
                 }
