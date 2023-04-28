@@ -21,7 +21,7 @@ const Drechseln: NextPage<PageProps> = ({ imagePaths }) => {
     return (
         <section className={ [appStyles.container, appStyles.withFade].join(" ")}>
             <Head>
-                <title>Drechseln</title>   
+                <title>Drechseln - Ich und mein Holz.</title>   
             </Head>
             <h1 className={ cormorant.className }>
                 Ich und mein Holz.

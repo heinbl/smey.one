@@ -11,7 +11,7 @@ const Simon: NextPage<PageProps> = ({ }): JSX.Element => {
   return (
     <div className={[appStyles.container, appStyles.withFade].join(" ")}>
       <Head>
-        <title>Simon</title>
+        <title>Simon - Über Simon</title>
       </Head>
       <About />
     </div>
