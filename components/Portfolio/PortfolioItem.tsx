@@ -21,9 +21,9 @@ const PortfolioItem: React.FC<PortfolioItemProps> = (
   }): JSX.Element => {
   return (
     <article>
-      <h2>{title}</h2>
       <div className={appStyles.containerM0}>
         <section className={styles.portfolioItemInfo}>
+          <h3>{title}</h3>
           {children}
           <aside className={styles.projectLinks}>
             <a
@@ -38,7 +38,7 @@ const PortfolioItem: React.FC<PortfolioItemProps> = (
           </aside>
         </section>
         <div className={styles.carousel}>
-          <Carousel images={images}></Carousel>
+          <Carousel images={images} title={`Ein Bild das das Projekt ${title} zeigt.`}></Carousel>
         </div>
       </div>
     </article>

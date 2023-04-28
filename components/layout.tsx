@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import Header from '@components/Header/header';
 import { Montserrat } from 'next/font/google';
 type LayoutProps = {

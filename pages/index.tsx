@@ -7,7 +7,7 @@ const Index: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Simon Meyer - Full-Stack-Developer</title>
+        <title>Simon Meyer - Full-Stack-Developer aus Oldenburg in Niedersachsen</title>
       </Head>
       <Intro />
     </>

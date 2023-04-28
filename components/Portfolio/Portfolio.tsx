@@ -21,7 +21,7 @@ export const Portfolio: React.FC<PortfolioProps> = (): JSX.Element => {
   return (
     <section id="projekte" className={[appStyles.scrollMargin, appStyles.pageHeight].join(" ")} >
       <div className={[appStyles.containerM0, appStyles.flexV].join(" ")}>
-        <h1 className={cormorant.className}>Projekte</h1>
+        <h2 className={[appStyles.bigHeadline, cormorant.className].join(" ")}>Projekte</h2>
         <PortfolioItem
           title="VOSS"
           githubName="voss-web"

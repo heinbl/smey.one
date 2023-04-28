@@ -24,6 +24,10 @@
     margin-bottom: 1rem;
 }
 
+.bigHeadline {
+    font-size: 2rem;
+}
+
 .teaserLink,
 .teaserLink:visited,
 .teaserLink:link {
@@ -36,8 +40,8 @@
 }
 
 .teaserLink:hover {
-    font-style: italic;
-    transform: translateX(5px);
+    color: var(--accent);
+    background-color: var(--background);
 }
 
 .bigLink,
@@ -209,8 +213,8 @@ a:hover > .primaryText {
 }
 
 .scrollMargin {
-    scroll-margin-top: 50px;
-    scroll-snap-margin-top: 50px;
+    scroll-margin-top: 75px;
+    scroll-snap-margin-top: 75px;
 }
 
 .smallMargin {
@@ -251,10 +255,6 @@ a:hover > .primaryText {
 }
 
 @media screen and (min-width: 600px) {
-    .scrollMargin {
-        scroll-margin-top: 50px;
-        scroll-snap-margin-top: 50px;
-    }
     .container {
         width: 80%;
         margin: 4rem auto 0 auto;
@@ -267,8 +267,8 @@ a:hover > .primaryText {
 
 @media screen and (min-width: 900px) {
     .scrollMargin {
-        scroll-snap-margin-top: 0;
-        scroll-margin-top: 0;
+        scroll-snap-margin-top: 10px;
+        scroll-margin-top: 10px;
     }
     .container {
         margin-top: 1rem;

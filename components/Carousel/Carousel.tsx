@@ -9,9 +9,10 @@ import rgbPlaceholder from "@lib/placeholder";
 
 interface CarouselProps {
   images: Array<StaticImageData>,
+  title?: string,
 }
 
-const Carousel: React.FC<CarouselProps> = ({ images }): JSX.Element => {
+const Carousel: React.FC<CarouselProps> = ({ images, title }): JSX.Element => {
   const [scrollSnapList, setScrollSnapList] = useState<number[]>([]);
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
   const [carouselRef, emblaApi] = useEmblaCarousel(
@@ -58,6 +59,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }): JSX.Element => {
                 <InlineImage key={key} className="embla__slide">
                   <Image
                     className="embla__image"
+                    title={ title }
                     src={i}
                     alt="image showing voss invoice software"
                     placeholder="blur"

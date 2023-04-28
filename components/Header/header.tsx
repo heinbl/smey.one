@@ -40,8 +40,8 @@ return (
           className={ showHamburger ? styles.hamburgerActive : '' }
           id="hamburger-active" />
         <label className={[styles.hamburgerBox].join(" ")} htmlFor="hamburger-active">
-          <div className={ styles.hamburgerMenu}>
-            <div className={styles.hamburgerLinks}>
+          <span className={ styles.hamburgerMenu}>
+            <span className={styles.hamburgerLinks}>
               <Link 
                 scroll={false}
                 className={[(subpath === 'intro' || (subpath === '/' && !path)) ? styles.hamburgerItemSelected : '', styles.hamburgerItem].join(" ")}
@@ -93,8 +93,8 @@ return (
                 >
                 Kontakt
               </Link>
-            </div>
-          </div>
+            </span>
+          </span>
           <i className={[styles.hamburger, styles.hamburgerOne].join(" ")}></i>
         </label>
       </nav>
