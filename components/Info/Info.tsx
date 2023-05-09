@@ -30,7 +30,7 @@ const Info: React.FC<InfoProps> = (): JSX.Element => {
               </Link>
             </h1>
             <p className={styles.subHeadline}>
-              ein Full-Stack-Entwickler aus dem schönen Oldenburg.
+              Ein Full-Stack-Entwickler aus dem schönen Oldenburg.
             </p>
 
             <p className={styles.subHeadline}>
