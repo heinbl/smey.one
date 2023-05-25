@@ -23,7 +23,7 @@ export const Portfolio: React.FC<PortfolioProps> = (): JSX.Element => {
       <div className={[appStyles.containerM0, appStyles.flexV].join(" ")}>
         <h2 className={[appStyles.bigHeadline, cormorant.className].join(" ")}>Projekte</h2>
         <PortfolioItem
-          title="VOSS"
+          title="VOSS (work in progress)"
           githubName="voss-web"
           images={[voss1, voss2, voss3, voss4]}
         >
