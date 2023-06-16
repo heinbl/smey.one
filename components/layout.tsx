@@ -1,4 +1,5 @@
 import Header from '@components/Header/header';
+import Footer from '@components/Footer/';
 import { Montserrat } from 'next/font/google';
 type LayoutProps = {
   children: React.ReactNode;
@@ -14,6 +15,7 @@ export default function Layout({ children }: LayoutProps) {
     <main className={ font.className }>
       <Header />
       {children}
+      <Footer />
     </main>
   );
 }

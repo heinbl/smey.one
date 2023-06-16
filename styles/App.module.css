@@ -7,6 +7,10 @@
     max-width: 90ch;
 }
 
+.centeredContainer {
+    margin: 0 auto;
+}
+
 .flexV {
     flex-direction: column !important;
 }

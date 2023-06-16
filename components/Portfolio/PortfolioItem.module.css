@@ -56,7 +56,6 @@
   transform: translateY(-1px);
 }
 
-
 @media screen and (min-width: 900px) {
   .projectLinks {
     margin-bottom: 1rem;
