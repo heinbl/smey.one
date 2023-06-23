@@ -44,10 +44,8 @@ const Drechseln: NextPage<PageProps> = ({ imagePaths }) => {
                 {
                     imagePaths && imagePaths.map( (filename, i)=> { 
                         return (
-                            <>
                             <InlineImage key={i}>
                                 <Image
-                                    key={i}
                                     src={ `/images/drechseln/${filename}` }
                                     height={ 500 }
                                     width={ 500 }
@@ -62,7 +60,6 @@ const Drechseln: NextPage<PageProps> = ({ imagePaths }) => {
                                     33vw"
                                 />
                             </InlineImage>
-                            </>
                         );
                     })
                 }
