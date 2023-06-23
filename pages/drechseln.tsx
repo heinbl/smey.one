@@ -43,22 +43,25 @@ const Drechseln: NextPage<PageProps> = ({ imagePaths }) => {
             <article className={ appStyles.imageContainer }>
                 {
                     imagePaths && imagePaths.map( (filename, i)=> { 
+                        const imageLink = `/images/drechseln/${filename}`
                         return (
                             <InlineImage key={i}>
-                                <Image
-                                    src={ `/images/drechseln/${filename}` }
-                                    height={ 500 }
-                                    width={ 500 }
-                                    quality={50}
-                                    alt="image showing woodwork"
-                                    placeholder="blur"
-                                    blurDataURL={ rgbPlaceholder(252, 223, 166) }
-                                    loading={ i === 0 ? 'eager' : 'lazy' }
-                                    sizes="
-                                    (max-width: 600px) 90vw,
-                                    (max-width: 900px) 50vw,
-                                    33vw"
-                                />
+                                <a href={ imageLink } target="_blank">
+                                    <Image
+                                        src={ imageLink }
+                                        height={ 500 }
+                                        width={ 500 }
+                                        quality={50}
+                                        alt="image showing woodwork"
+                                        placeholder="blur"
+                                        blurDataURL={ rgbPlaceholder(252, 223, 166) }
+                                        loading={ i === 0 ? 'eager' : 'lazy' }
+                                        sizes="
+                                        (max-width: 600px) 90vw,
+                                        (max-width: 900px) 50vw,
+                                        33vw"
+                                    />
+                                </a>
                             </InlineImage>
                         );
                     })
